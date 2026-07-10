@@ -1,0 +1,16 @@
+{
+  "name": "browser-use",
+  "displayName": "浏览器自动化",
+  "description": "浏览器自动化（导航、点击、截图、数据提取、多会话、云浏览器）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/browser-use"
+  ],
+  "version": "2.0.3",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

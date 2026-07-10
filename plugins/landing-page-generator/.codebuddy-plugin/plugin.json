@@ -1,0 +1,18 @@
+{
+  "name": "landing-page-generator",
+  "displayName": "生成可直接部署的单页营销落地页",
+  "description": "生成可直接部署的单页营销落地页",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/landing-page-generator"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "网站部署",
+    "内容创作",
+    "Website Deployment",
+    "Content Creation"
+  ]
+}

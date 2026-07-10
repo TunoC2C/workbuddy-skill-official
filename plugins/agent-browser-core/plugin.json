@@ -1,0 +1,16 @@
+{
+  "name": "agent-browser-core",
+  "displayName": "Agent Browser 网页自动化",
+  "description": "基于 agent-browser CLI 的 AI 友好型网页自动化",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/agent-browser-core"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

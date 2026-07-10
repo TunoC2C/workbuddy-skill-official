@@ -1,0 +1,16 @@
+{
+  "name": "english-intensive-reader",
+  "displayName": "英语精读",
+  "description": "输入英文文章，逐句语法拆解+生词分级标注，生成双栏阅读笔记，支持加入单词本和导出Anki",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/english-intensive-reader"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

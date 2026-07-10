@@ -1,0 +1,16 @@
+{
+  "name": "tencent-weather",
+  "displayName": "中国各地实时天气和天气预报信息查询",
+  "description": "中国各地实时天气和天气预报信息查询，覆盖市级和区县级行政区",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tencent-weather"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

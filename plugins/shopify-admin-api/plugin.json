@@ -1,0 +1,20 @@
+{
+  "name": "shopify-admin-api",
+  "displayName": "Shopify Admin REST API 完整封装",
+  "description": "Shopify Admin REST API 完整封装：订单、商品、库存、客户全管理",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/shopify-admin-api"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "商业运营",
+    "开发工具",
+    "OPC · Solo Business",
+    "Business Operations",
+    "Development Tools"
+  ]
+}

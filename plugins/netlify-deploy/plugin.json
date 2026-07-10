@@ -1,0 +1,16 @@
+{
+  "name": "netlify-deploy",
+  "displayName": "使用 Netlify CLI 部署和管理静态网站",
+  "description": "使用 Netlify CLI 部署和管理静态网站",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/netlify-deploy"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "网站部署",
+    "Website Deployment"
+  ]
+}

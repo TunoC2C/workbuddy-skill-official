@@ -1,0 +1,16 @@
+{
+  "name": "brand-guidelines",
+  "displayName": "品牌设计规范",
+  "description": "应用 Anthropic 品牌配色和排版到设计产物",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/brand-guidelines"
+  ],
+  "version": "1.0.2",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "imap-smtp-email",
+  "displayName": "IMAP/SMTP邮件",
+  "description": "通过 IMAP/SMTP 收发邮件，支持多账户和附件",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/imap-smtp-email"
+  ],
+  "version": "0.0.13",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

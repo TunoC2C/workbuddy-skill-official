@@ -1,0 +1,16 @@
+{
+  "name": "westock-data",
+  "displayName": "A股/港股/美股行情数据查询",
+  "description": "A股/港股/美股行情数据查询（K线、财报、资金流、技术指标、板块排行）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/westock-data"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "投资理财",
+    "Investment & Finance"
+  ]
+}

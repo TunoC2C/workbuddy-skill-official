@@ -1,0 +1,16 @@
+{
+  "name": "agent-team-orchestration",
+  "displayName": "多智能体团队编排",
+  "description": "多智能体团队编排：角色定义、任务流转、交接协议与质量门禁",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/agent-team-orchestration"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "smooth-browser",
+  "displayName": "Smooth.sh 云端 AI 浏览器代理",
+  "description": "Smooth.sh 云端 AI 浏览器代理，自然语言驱动网页操作",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/smooth-browser"
+  ],
+  "version": "0.1.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

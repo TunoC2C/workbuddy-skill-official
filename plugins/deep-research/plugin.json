@@ -1,0 +1,18 @@
+{
+  "name": "deep-research",
+  "displayName": "结构化深度调研工作流",
+  "description": "结构化深度调研工作流，支持大纲生成、并行搜索、报告输出",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/deep-research"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "信息资讯",
+    "OPC · Solo Business",
+    "News & Information"
+  ]
+}

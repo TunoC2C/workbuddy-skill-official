@@ -1,0 +1,16 @@
+{
+  "name": "healthcheck",
+  "displayName": "健康打卡",
+  "description": "追踪每日饮水和睡眠记录",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/healthcheck"
+  ],
+  "version": "1.0.2",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

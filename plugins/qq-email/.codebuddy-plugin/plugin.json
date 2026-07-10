@@ -1,0 +1,16 @@
+{
+  "name": "qq-email",
+  "displayName": "QQ邮箱",
+  "description": "QQ邮箱收发邮件（IMAP/SMTP），支持发信、收信、查看正文",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/qq-email"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

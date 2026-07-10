@@ -1,0 +1,16 @@
+{
+  "name": "weiyun",
+  "displayName": "腾讯微云",
+  "description": "管理腾讯微云网盘文件（列表、上传、下载、删除、分享）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/weiyun"
+  ],
+  "version": "1.0.5",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

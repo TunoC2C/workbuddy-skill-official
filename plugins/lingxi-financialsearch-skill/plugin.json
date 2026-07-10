@@ -1,0 +1,16 @@
+{
+  "name": "lingxi-financialsearch-skill",
+  "displayName": "国泰海通金融数据查询",
+  "description": "国泰海通金融数据查询，自然语言查A股行情、财务、技术指标",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/lingxi-financialsearch-skill"
+  ],
+  "version": "1.11.0",
+  "keywords": [
+    "投资理财",
+    "Investment & Finance"
+  ]
+}

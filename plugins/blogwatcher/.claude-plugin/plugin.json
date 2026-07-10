@@ -1,0 +1,16 @@
+{
+  "name": "blogwatcher",
+  "displayName": "博客监控",
+  "description": "监控博客和 RSS 订阅源更新",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/blogwatcher"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

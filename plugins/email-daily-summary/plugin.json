@@ -1,0 +1,16 @@
+{
+  "name": "email-daily-summary",
+  "displayName": "邮件日报摘要",
+  "description": "自动登录邮箱生成每日邮件摘要(Gmail/Outlook/QQ邮箱等)",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/email-daily-summary"
+  ],
+  "version": "0.1.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

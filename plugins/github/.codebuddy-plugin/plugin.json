@@ -1,0 +1,16 @@
+{
+  "name": "github",
+  "displayName": "管理 GitHub Issues、PR 和 CI",
+  "description": "管理 GitHub Issues、PR 和 CI",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/github"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

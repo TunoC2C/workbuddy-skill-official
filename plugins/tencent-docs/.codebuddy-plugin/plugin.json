@@ -1,0 +1,16 @@
+{
+  "name": "tencent-docs",
+  "displayName": "腾讯文档",
+  "description": "腾讯文档在线云文档平台，创建、编辑、管理多种类型文档",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tencent-docs"
+  ],
+  "version": "1.0.31",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

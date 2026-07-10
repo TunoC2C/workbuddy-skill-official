@@ -1,0 +1,16 @@
+{
+  "name": "neodata-financial-search",
+  "displayName": "NeoData金融搜索服务",
+  "description": "自然语言查询股票、基金、宏观、外汇、大宗商品等金融数据",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/neodata-financial-search"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "投资理财",
+    "Investment & Finance"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "weather",
+  "displayName": "天气查询",
+  "description": "查询天气预报，无需 API 密钥",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/weather"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

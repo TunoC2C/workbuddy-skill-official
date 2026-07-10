@@ -1,0 +1,16 @@
+{
+  "name": "colleague-skill",
+  "displayName": "同事.skill",
+  "description": "把同事蒸馏成 AI Skill，采集飞书/钉钉数据生成人格与工作模型",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/colleague-skill"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

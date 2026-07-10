@@ -1,0 +1,16 @@
+{
+  "name": "stock-analysis",
+  "displayName": "股票与加密货币分析",
+  "description": "股票与加密货币分析（8维评分、组合管理、趋势扫描、传闻探测）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/stock-analysis"
+  ],
+  "version": "6.2.0",
+  "keywords": [
+    "投资理财",
+    "Investment & Finance"
+  ]
+}

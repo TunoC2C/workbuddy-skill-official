@@ -1,0 +1,16 @@
+{
+  "name": "citation-manager",
+  "displayName": "学术引用管理",
+  "description": "学术引用管理，为论文添加真实参考文献并规范引用标注",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/citation-manager"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

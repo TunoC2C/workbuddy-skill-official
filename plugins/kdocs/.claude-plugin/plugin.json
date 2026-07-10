@@ -1,0 +1,16 @@
+{
+  "name": "kdocs",
+  "displayName": "金山文档| WPS云文档",
+  "description": "金山文档官方 Skill。对话即操作——知识一键存入、碎片内容整理、接龙转表格、文档转 Markdown、表格美化、收发表生成，全在一句话内完成。",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/kdocs"
+  ],
+  "version": "1.3.3",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "note-organizer",
+  "displayName": "Joplin笔记管理",
+  "description": "基于 Joplin 的个人笔记管理与知识库工具",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/note-organizer"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

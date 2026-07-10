@@ -1,0 +1,16 @@
+{
+  "name": "gmail",
+  "displayName": "通过 Gmail API 收发邮件、管理标签和草稿",
+  "description": "通过 Gmail API 收发邮件、管理标签和草稿",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/gmail"
+  ],
+  "version": "1.0.8",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

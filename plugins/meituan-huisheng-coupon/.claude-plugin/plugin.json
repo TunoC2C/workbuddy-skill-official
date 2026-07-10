@@ -1,0 +1,16 @@
+{
+  "name": "meituan-huisheng-coupon",
+  "displayName": "美团惠省优惠助手",
+  "description": "帮用户自动领取美团优惠券并查询当日优惠活动，覆盖外卖、到店餐饮、休闲娱乐、酒旅等全品类",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/meituan-huisheng-coupon"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

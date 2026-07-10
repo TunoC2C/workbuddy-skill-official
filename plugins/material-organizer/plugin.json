@@ -1,0 +1,16 @@
+{
+  "name": "material-organizer",
+  "displayName": "资料整理",
+  "description": "批量导入链接/PDF/笔记/截图，自动提炼要点、按主题分类归档、生成结构化研究笔记",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/material-organizer"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

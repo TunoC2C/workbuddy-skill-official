@@ -1,0 +1,16 @@
+{
+  "name": "boss-skills",
+  "displayName": "老板.skill",
+  "description": "蒸馏老板或生成企业家原型 Skill，模拟管理风格与决策模式",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/boss-skills"
+  ],
+  "version": "1.1.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

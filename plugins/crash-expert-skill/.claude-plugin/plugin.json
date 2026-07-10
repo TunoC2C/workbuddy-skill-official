@@ -1,0 +1,16 @@
+{
+  "name": "crash-expert-skill",
+  "displayName": "TencentOS宕机分析助手",
+  "description": "Linux 内核 vmcore 分析专家，诊断 panic/死锁/OOM 根因",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/crash-expert-skill"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development"
+  ]
+}

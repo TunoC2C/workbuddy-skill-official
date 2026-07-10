@@ -1,0 +1,16 @@
+{
+  "name": "web-access",
+  "displayName": "Web Access（浏览器自动化）",
+  "description": "CDP 直连本地 Chrome，智能调度联网工具，支持登录态、并行批量操作",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/web-access"
+  ],
+  "version": "2.5.2",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

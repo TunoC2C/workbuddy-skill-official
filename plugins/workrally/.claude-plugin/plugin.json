@@ -1,0 +1,16 @@
+{
+  "name": "workrally",
+  "displayName": "WorkRally AI 内容创作",
+  "description": "WorkRally AI 内容创作（生图、生视频、画布、素材管理）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/workrally"
+  ],
+  "version": "2.4.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "meituan-coupon-workbuddy",
+  "displayName": "美团红包助手",
+  "description": "美团一键领券，覆盖外卖、团购、酒旅、休闲等多品类",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/meituan-coupon-workbuddy"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

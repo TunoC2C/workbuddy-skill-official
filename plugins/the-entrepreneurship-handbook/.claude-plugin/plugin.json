@@ -1,0 +1,18 @@
+{
+  "name": "the-entrepreneurship-handbook",
+  "displayName": "创业可以学",
+  "description": "服务创业者和管理者，解答创业/商业/管理问题，引发深度思考",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/the-entrepreneurship-handbook"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "教育学习",
+    "OPC · Solo Business",
+    "Education & Learning"
+  ]
+}

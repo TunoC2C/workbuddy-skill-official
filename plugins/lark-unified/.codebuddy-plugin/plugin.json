@@ -1,0 +1,16 @@
+{
+  "name": "lark-unified",
+  "displayName": "飞书套件",
+  "description": "飞书/Lark 全能套件（消息、文档、表格、日历、任务、Wiki 等 11 个业务域）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/lark-unified"
+  ],
+  "version": "1.0.3",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

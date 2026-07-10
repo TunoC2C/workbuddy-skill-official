@@ -1,0 +1,16 @@
+{
+  "name": "open-lesson",
+  "displayName": "苏格拉底式 AI 辅导",
+  "description": "苏格拉底式 AI 辅导：生成学习计划、音频对话式教学、诊断推理差距",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/open-lesson"
+  ],
+  "version": "1.0.2",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

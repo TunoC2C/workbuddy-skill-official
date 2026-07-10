@@ -1,0 +1,16 @@
+{
+  "name": "minimax-docx",
+  "displayName": "Word 文档生成",
+  "description": "Word 文档生成与编辑",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/minimax-docx"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

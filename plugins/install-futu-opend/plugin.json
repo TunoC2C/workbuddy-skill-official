@@ -1,0 +1,16 @@
+{
+  "name": "install-futu-opend",
+  "displayName": "富途OpenD安装",
+  "description": "富途 OpenD 一键安装与 SDK 升级（Win/Mac/Linux）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/install-futu-opend"
+  ],
+  "version": "0.1.1",
+  "keywords": [
+    "投资理财",
+    "Investment & Finance"
+  ]
+}

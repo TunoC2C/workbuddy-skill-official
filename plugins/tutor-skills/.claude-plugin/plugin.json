@@ -1,0 +1,16 @@
+{
+  "name": "tutor-skills",
+  "displayName": "将文档/代码转为 Obsidian 学习库",
+  "description": "将文档/代码转为 Obsidian 学习库，自动出题、测验并跟踪掌握度",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tutor-skills"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

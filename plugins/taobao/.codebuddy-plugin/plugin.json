@@ -1,0 +1,18 @@
+{
+  "name": "taobao",
+  "displayName": "全网比价（买手）",
+  "description": "全网比价：淘宝/京东/拼多多多平台商品价格与优惠券查询",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/taobao"
+  ],
+  "version": "1.0.3",
+  "keywords": [
+    "生活服务",
+    "商业运营",
+    "Lifestyle Services",
+    "Business Operations"
+  ]
+}

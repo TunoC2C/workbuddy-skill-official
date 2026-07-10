@@ -1,0 +1,18 @@
+{
+  "name": "fullstack-dev",
+  "displayName": "全栈开发",
+  "description": "全栈应用架构与开发指南",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/fullstack-dev"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "开发工具",
+    "OPC · Solo Business",
+    "Development Tools"
+  ]
+}

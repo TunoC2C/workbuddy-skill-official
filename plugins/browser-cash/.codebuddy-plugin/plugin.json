@@ -1,0 +1,16 @@
+{
+  "name": "browser-cash",
+  "displayName": "Browser.cash 云端反封锁浏览器会话",
+  "description": "Browser.cash 云端反封锁浏览器会话（绕过 Cloudflare 等）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/browser-cash"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

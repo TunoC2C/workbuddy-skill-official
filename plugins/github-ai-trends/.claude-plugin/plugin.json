@@ -1,0 +1,16 @@
+{
+  "name": "github-ai-trends",
+  "displayName": "GitHub AI趋势追踪",
+  "description": "生成 GitHub AI 热门项目趋势排行榜报告",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/github-ai-trends"
+  ],
+  "version": "1.1.0",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

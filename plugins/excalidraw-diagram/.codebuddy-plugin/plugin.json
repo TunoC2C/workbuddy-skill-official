@@ -1,0 +1,15 @@
+{
+  "name": "excalidraw-diagram",
+  "displayName": "Excalidraw 图解生成",
+  "description": "Excalidraw 图解生成与渲染校验",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/excalidraw-diagram"
+  ],
+  "keywords": [
+    "开发工具",
+    "Development"
+  ]
+}

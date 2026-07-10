@@ -1,0 +1,16 @@
+{
+  "name": "academic-translation",
+  "displayName": "学术翻译",
+  "description": "学术论文中英互译，三步法（直译→反思→雅化），公式零损伤，顶会术语库，双栏对照输出",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/academic-translation"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

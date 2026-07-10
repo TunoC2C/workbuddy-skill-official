@@ -1,0 +1,18 @@
+{
+  "name": "wechat-miniprogram",
+  "displayName": "微信小程序开发框架",
+  "description": "微信小程序开发框架（模板、组件、API、云开发）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/wechat-miniprogram"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "开发工具",
+    "OPC · Solo Business",
+    "Development Tools"
+  ]
+}

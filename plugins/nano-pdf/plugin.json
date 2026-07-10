@@ -1,0 +1,16 @@
+{
+  "name": "nano-pdf",
+  "displayName": "轻量PDF编辑器",
+  "description": "用自然语言编辑 PDF 文件",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/nano-pdf"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

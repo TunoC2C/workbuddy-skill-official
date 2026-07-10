@@ -1,0 +1,16 @@
+{
+  "name": "goal-tracker",
+  "displayName": "goal-tracker（目标追踪）",
+  "description": "追踪长期目标、里程碑、每日记录与问责系统",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/goal-tracker"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

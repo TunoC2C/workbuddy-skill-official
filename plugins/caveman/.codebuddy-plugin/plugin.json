@@ -1,0 +1,16 @@
+{
+  "name": "caveman",
+  "displayName": "超压缩沟通模式",
+  "description": "超压缩沟通模式：去除废话保留技术精度，节省约 75% token",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/caveman"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

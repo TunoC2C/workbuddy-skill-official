@@ -1,0 +1,18 @@
+{
+  "name": "autoresearch",
+  "displayName": "Karpathy 风格内容优化",
+  "description": "Karpathy 风格内容优化，50+ 变体 + 专家评分 + 进化迭代",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/autoresearch"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "OPC·一人公司",
+    "商业运营",
+    "OPC · Solo Business",
+    "Business Operations"
+  ]
+}

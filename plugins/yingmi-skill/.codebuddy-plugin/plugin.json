@@ -1,0 +1,16 @@
+{
+  "name": "yingmi-skill",
+  "displayName": "盈米Skills",
+  "description": "基金查询、组合诊断、资产配置与财富规划的金融数据助手",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/yingmi-skill"
+  ],
+  "version": "0.1.5",
+  "keywords": [
+    "投资理财",
+    "Investment & Finance"
+  ]
+}

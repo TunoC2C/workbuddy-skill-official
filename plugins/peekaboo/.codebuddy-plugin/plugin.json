@@ -1,0 +1,16 @@
+{
+  "name": "peekaboo",
+  "displayName": "macOS界面自动化",
+  "description": "截取和自动化 macOS 界面操作",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/peekaboo"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

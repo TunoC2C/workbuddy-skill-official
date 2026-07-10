@@ -1,0 +1,16 @@
+{
+  "name": "handoff",
+  "displayName": "将当前对话压缩为交接文档",
+  "description": "将当前对话压缩为交接文档，供下一个 Agent 无缝接续工作",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/handoff"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

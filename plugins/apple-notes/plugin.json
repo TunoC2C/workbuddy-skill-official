@@ -1,0 +1,16 @@
+{
+  "name": "apple-notes",
+  "displayName": "Apple备忘录",
+  "description": "管理 Apple 备忘录（创建、搜索、导出）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/apple-notes"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

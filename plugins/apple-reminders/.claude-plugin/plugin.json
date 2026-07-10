@@ -1,0 +1,16 @@
+{
+  "name": "apple-reminders",
+  "displayName": "Apple提醒事项",
+  "description": "管理 Apple 提醒事项（添加、编辑、完成）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/apple-reminders"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

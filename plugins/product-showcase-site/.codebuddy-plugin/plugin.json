@@ -1,0 +1,20 @@
+{
+  "name": "product-showcase-site",
+  "displayName": "为已有应用生成可部署的多页产品展示站",
+  "description": "为已有应用生成可部署的多页产品展示站",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/product-showcase-site"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "网站部署",
+    "商业运营",
+    "内容创作",
+    "Website Deployment",
+    "Business Operations",
+    "Content Creation"
+  ]
+}

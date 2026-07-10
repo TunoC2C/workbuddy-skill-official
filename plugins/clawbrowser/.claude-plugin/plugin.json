@@ -1,0 +1,16 @@
+{
+  "name": "clawbrowser",
+  "displayName": "通过 Playwright CLI 驱动浏览器",
+  "description": "通过 Playwright CLI 驱动浏览器（快照、表单、会话管理）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/clawbrowser"
+  ],
+  "version": "0.1.1",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

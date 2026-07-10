@@ -1,0 +1,16 @@
+{
+  "name": "md-to-pdf-cjk",
+  "displayName": "Markdown转PDF（CJK）",
+  "description": "Markdown 转 PDF，原生支持中文/日文/韩文排版",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/md-to-pdf-cjk"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

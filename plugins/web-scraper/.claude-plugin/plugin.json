@@ -1,0 +1,16 @@
+{
+  "name": "web-scraper",
+  "displayName": "多策略五阶段网页抓取管道",
+  "description": "多策略五阶段网页抓取管道（HTTP/解析/渲染/清洗/LLM提取）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/web-scraper"
+  ],
+  "version": "0.1.1",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

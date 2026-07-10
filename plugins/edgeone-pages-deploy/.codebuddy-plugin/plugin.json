@@ -1,0 +1,16 @@
+{
+  "name": "edgeone-pages-deploy",
+  "displayName": "将前端或全栈项目部署到腾讯 EdgeOne Pages",
+  "description": "将前端或全栈项目部署到腾讯 EdgeOne Pages",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/edgeone-pages-deploy"
+  ],
+  "version": "1.0.5",
+  "keywords": [
+    "网站部署",
+    "Website Deployment"
+  ]
+}

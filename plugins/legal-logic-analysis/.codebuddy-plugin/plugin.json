@@ -1,0 +1,16 @@
+{
+  "name": "legal-logic-analysis",
+  "displayName": "系统化法律推理分析",
+  "description": "系统化法律推理分析（管辖权、事实、争点、适用法律、风险评估）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/legal-logic-analysis"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

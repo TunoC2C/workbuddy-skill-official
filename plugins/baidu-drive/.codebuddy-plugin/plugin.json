@@ -1,0 +1,16 @@
+{
+  "name": "baidu-drive",
+  "displayName": "百度网盘",
+  "description": "百度网盘文件管理，支持上传、下载、转存、分享、搜索等操作",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/baidu-drive"
+  ],
+  "version": "1.4.3",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

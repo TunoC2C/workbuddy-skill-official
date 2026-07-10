@@ -1,0 +1,16 @@
+{
+  "name": "sales-playbook",
+  "displayName": "基于价值的定价与销售剧本",
+  "description": "基于价值的定价与销售剧本，通话分析与报价打包",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/sales-playbook"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "商业运营",
+    "Business Operations"
+  ]
+}

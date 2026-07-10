@@ -1,0 +1,16 @@
+{
+  "name": "web-deploy",
+  "displayName": "Web 通用部署指南",
+  "description": "跨 Vercel、Railway、GitHub Pages 的通用 Web 部署指南",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/web-deploy"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "网站部署",
+    "Website Deployment"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "khazix-writer",
+  "displayName": "卡兹克公众号写作",
+  "description": "卡兹克风格的公众号长文写作，真诚有温度的AI内容创作",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/khazix-writer"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "内容创作",
+    "OPC · Solo Business",
+    "Content Creation"
+  ]
+}

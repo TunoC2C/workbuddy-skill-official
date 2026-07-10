@@ -1,0 +1,16 @@
+{
+  "name": "charity-writing-assistant",
+  "displayName": "公益文书助手",
+  "description": "面向公益从业者的一站式文书工作台。分步引导采集项目信息，自动适配各平台规范，生成可直接提交的专业文书；也可将已有材料一键标准化归档。覆盖腾讯公益、字节跳动公益、支付宝公益、微博微公益、京东公益、美团公益等平台。",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/charity-writing-assistant"
+  ],
+  "version": "6.6.2",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

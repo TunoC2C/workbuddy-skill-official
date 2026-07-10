@@ -1,0 +1,18 @@
+{
+  "name": "idea-validator",
+  "displayName": "创业验证",
+  "description": "创业想法验证，评估问题-方案匹配度与市场机会",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/idea-validator"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "商业运营",
+    "OPC · Solo Business",
+    "Business Operations"
+  ]
+}

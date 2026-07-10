@@ -1,0 +1,16 @@
+{
+  "name": "flights-search",
+  "displayName": "通过 Google Flights 搜索航班",
+  "description": "通过 Google Flights 搜索航班，支持城市名、舱位筛选和预订链接",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/flights-search"
+  ],
+  "version": "1.2.0",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

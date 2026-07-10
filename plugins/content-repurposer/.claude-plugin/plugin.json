@@ -1,0 +1,18 @@
+{
+  "name": "content-repurposer",
+  "displayName": "内容分发",
+  "description": "将长文内容转化为多平台优化的社交媒体片段",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/content-repurposer"
+  ],
+  "version": "1.1.0",
+  "keywords": [
+    "OPC·一人公司",
+    "内容创作",
+    "OPC · Solo Business",
+    "Content Creation"
+  ]
+}

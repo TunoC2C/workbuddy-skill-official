@@ -1,0 +1,16 @@
+{
+  "name": "darwin-skill",
+  "displayName": "自主优化 Agent Skill",
+  "description": "自主优化 Agent Skill（8维评分、棘轮机制、自动改进）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/darwin-skill"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development"
+  ]
+}

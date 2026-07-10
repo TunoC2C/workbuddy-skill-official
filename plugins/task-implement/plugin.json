@@ -1,0 +1,15 @@
+{
+  "name": "task-implement",
+  "displayName": "任务执行",
+  "description": "作为用户代理自主执行任务并独立验收交付",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/task-implement"
+  ],
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

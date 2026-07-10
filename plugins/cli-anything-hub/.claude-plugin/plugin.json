@@ -1,0 +1,16 @@
+{
+  "name": "cli-anything-hub",
+  "displayName": "发现并安装面向 AI 智能体的 CLI 工具市场",
+  "description": "发现并安装面向 AI 智能体的 CLI 工具市场（创意、生产力、AI 平台等）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/cli-anything-hub"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

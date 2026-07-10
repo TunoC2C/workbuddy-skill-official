@@ -1,0 +1,16 @@
+{
+  "name": "wacli",
+  "displayName": "发送 WhatsApp 消息和同步历史",
+  "description": "发送 WhatsApp 消息和同步历史",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/wacli"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

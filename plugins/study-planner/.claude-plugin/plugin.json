@@ -1,0 +1,15 @@
+{
+  "name": "study-planner",
+  "displayName": "学习规划师",
+  "description": "输入目标+截止日+每日时长，输出分阶段学习计划和每日任务清单，支持打卡和进度追踪",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/study-planner"
+  ],
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

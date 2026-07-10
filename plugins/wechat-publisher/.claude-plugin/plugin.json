@@ -1,0 +1,18 @@
+{
+  "name": "wechat-publisher",
+  "displayName": "一键发布 Markdown 到微信公众号草稿箱",
+  "description": "一键发布 Markdown 到微信公众号草稿箱（多主题、代码高亮、图片自动上传）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/wechat-publisher"
+  ],
+  "version": "0.1.0",
+  "keywords": [
+    "OPC·一人公司",
+    "内容创作",
+    "OPC · Solo Business",
+    "Creative"
+  ]
+}

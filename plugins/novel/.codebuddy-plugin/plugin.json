@@ -1,0 +1,16 @@
+{
+  "name": "novel",
+  "displayName": "小说管理工具",
+  "description": "在终端管理小说数据(章节、角色、情节)，支持导出和搜索",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/novel"
+  ],
+  "version": "2.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

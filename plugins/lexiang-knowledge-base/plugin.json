@@ -1,0 +1,16 @@
+{
+  "name": "lexiang-knowledge-base",
+  "displayName": "乐享知识库",
+  "description": "支持多源导入、多模态问答、PPT生成的原生Agentic知识库，深度解析图文与音视频，为Agent注入高质量、安全可控的知识",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/lexiang-knowledge-base"
+  ],
+  "version": "2.0.3",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "guizang-ppt-skill",
+  "displayName": "歸藏的 PPT Skills",
+  "description": "歸藏的 PPT Skills，生成高质量网页 PPT、演讲 deck 与多比例封面，内置电子杂志风和瑞士国际主义两套视觉系统。",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/guizang-ppt-skill"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

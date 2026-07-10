@@ -1,0 +1,18 @@
+{
+  "name": "flutter-dev",
+  "displayName": "Flutter 开发",
+  "description": "Flutter 跨平台开发指南",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/flutter-dev"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "开发工具",
+    "OPC · Solo Business",
+    "Development Tools"
+  ]
+}

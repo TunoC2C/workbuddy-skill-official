@@ -1,0 +1,16 @@
+{
+  "name": "tencentcloud-cos",
+  "displayName": "腾讯云COS",
+  "description": "腾讯云 COS 对象存储、数据万象数据智能处理、MetaInsight多模态检索、知识库搭建",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tencentcloud-cos"
+  ],
+  "version": "1.1.5",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "perplexity",
+  "displayName": "Perplexity 搜索",
+  "description": "通过 Perplexity API 进行 AI 联网搜索，返回带引用来源的答案，支持批量查询",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/perplexity"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

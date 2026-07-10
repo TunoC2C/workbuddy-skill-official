@@ -1,0 +1,15 @@
+{
+  "name": "airchina-travel-assistant",
+  "displayName": "国航出行助手",
+  "description": "免费领取国航机票优惠券！自动发送到国航会员账户，五一出游好搭子",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/airchina-travel-assistant"
+  ],
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

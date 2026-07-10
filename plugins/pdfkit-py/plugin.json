@@ -1,0 +1,15 @@
+{
+  "name": "pdfkit-py",
+  "displayName": "腾讯文档 pdfkit",
+  "description": "PDF全能工具箱，覆盖阅读分析、自然语言编辑、格式转换、表单处理、加密签名、OCR、IR等全场景",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/pdfkit-py"
+  ],
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

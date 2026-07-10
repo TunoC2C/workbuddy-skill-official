@@ -1,0 +1,16 @@
+{
+  "name": "news-summary",
+  "displayName": "新闻摘要",
+  "description": "从国际 RSS 源获取新闻并生成摘要和语音播报",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/news-summary"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

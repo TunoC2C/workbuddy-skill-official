@@ -1,0 +1,16 @@
+{
+  "name": "tencentos-expert",
+  "displayName": "TencentOS运维助手",
+  "description": "TencentOS 服务器运维诊断助手，排查磁盘/网络/CPU/内存/安全问题",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tencentos-expert"
+  ],
+  "version": "2.0.1",
+  "keywords": [
+    "开发工具",
+    "Development"
+  ]
+}

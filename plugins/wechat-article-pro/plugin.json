@@ -1,0 +1,18 @@
+{
+  "name": "wechat-article-pro",
+  "displayName": "微信公众号文章发布",
+  "description": "公众号长文写作+AI封面+自动发草稿（刘润风格、3000-5000字）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/wechat-article-pro"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "内容创作",
+    "OPC · Solo Business",
+    "Creative"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "cnb-skill",
+  "displayName": "CNB 平台全功能操作",
+  "description": "CNB 平台全功能操作（仓库、Issue、PR、流水线、制品库）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/cnb-skill"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

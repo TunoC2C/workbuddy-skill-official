@@ -1,0 +1,16 @@
+{
+  "name": "flyai",
+  "displayName": "基于飞猪 MCP",
+  "description": "基于飞猪 MCP，自然语言搜索机票、酒店、景点、演唱会，支持一站式预订",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/flyai"
+  ],
+  "version": "1.0.10",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

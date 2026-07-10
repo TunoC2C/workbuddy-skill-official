@@ -1,0 +1,16 @@
+{
+  "name": "tencent-news",
+  "displayName": "腾讯新闻",
+  "description": "7×24 新闻搜索工具，聚焦国内外热点，支持热榜、早晚报、实时资讯及领域新闻查询。",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tencent-news"
+  ],
+  "version": "1.0.9",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

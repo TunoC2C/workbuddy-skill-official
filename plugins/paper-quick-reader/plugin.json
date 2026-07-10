@@ -1,0 +1,16 @@
+{
+  "name": "paper-quick-reader",
+  "displayName": "论文速读",
+  "description": "输入论文PDF，秒出核心观点/方法/结论摘要，支持三档深度和多篇对比分析",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/paper-quick-reader"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

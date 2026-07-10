@@ -1,0 +1,16 @@
+{
+  "name": "wechatpay-basic-payment",
+  "displayName": "微信支付基础支付",
+  "description": "微信支付基础支付接入助手，涵盖支付、退款账单、分账、商户进件、开户意愿确认",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/wechatpay-basic-payment"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "browserwing",
+  "displayName": "BrowserWing HTTP API 浏览器自动化",
+  "description": "BrowserWing HTTP API 浏览器自动化（导航、交互、数据提取）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/browserwing"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

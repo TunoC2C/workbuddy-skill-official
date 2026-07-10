@@ -1,0 +1,16 @@
+{
+  "name": "arxiv-reader",
+  "displayName": "ArXiv论文精读",
+  "description": "基于 LLM 的 ArXiv 论文分类与深度阅读工具",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/arxiv-reader"
+  ],
+  "version": "1.0.3",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

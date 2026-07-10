@@ -1,0 +1,16 @@
+{
+  "name": "openclaw-assets-to-workbuddy",
+  "displayName": "OpenClaw记忆迁移",
+  "description": "将 OpenClaw 资产迁移到 WorkBuddy（身份、记忆、技能、MCP、Bot 配置）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/openclaw-assets-to-workbuddy"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

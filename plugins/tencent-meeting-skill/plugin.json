@@ -1,0 +1,16 @@
+{
+  "name": "tencent-meeting-skill",
+  "displayName": "腾讯会议",
+  "description": "腾讯会议管理（预约、录制、转写、纪要）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tencent-meeting-skill"
+  ],
+  "version": "1.0.10",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

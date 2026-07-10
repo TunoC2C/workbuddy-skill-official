@@ -1,0 +1,16 @@
+{
+  "name": "things-mac",
+  "displayName": "Things任务",
+  "description": "管理 Things 3 任务和项目",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/things-mac"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

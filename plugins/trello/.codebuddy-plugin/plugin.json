@@ -1,0 +1,16 @@
+{
+  "name": "trello",
+  "displayName": "管理 Trello 看板、列表和卡片",
+  "description": "管理 Trello 看板、列表和卡片",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/trello"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

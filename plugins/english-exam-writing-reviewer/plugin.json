@@ -1,0 +1,16 @@
+{
+  "name": "english-exam-writing-reviewer",
+  "displayName": "英语作文批改",
+  "description": "覆盖四六级/考研英语作文，严格对齐官方档次制评分，逐句批注+升档建议+HTML批改报告",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/english-exam-writing-reviewer"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

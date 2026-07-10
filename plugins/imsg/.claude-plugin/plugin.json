@@ -1,0 +1,16 @@
+{
+  "name": "imsg",
+  "displayName": "iMessage/短信收发与历史查看",
+  "description": "iMessage/短信收发与历史查看",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/imsg"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

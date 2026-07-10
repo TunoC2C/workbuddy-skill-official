@@ -1,0 +1,16 @@
+{
+  "name": "sino-drug-instructions-search",
+  "displayName": "药品说明书检索",
+  "description": "药品说明书与用药信息检索：支持自然语言查询适应症、禁忌、用法用量、不良反应、注意事项、成分、规格与厂家等；也可根据症状或疾病查找相关药品。",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/sino-drug-instructions-search"
+  ],
+  "version": "1.0.2",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

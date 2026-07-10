@@ -1,0 +1,16 @@
+{
+  "name": "us-stock-analysis",
+  "displayName": "美股综合分析",
+  "description": "美股综合分析（基本面、技术面、估值、对比报告）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/us-stock-analysis"
+  ],
+  "version": "0.1.1",
+  "keywords": [
+    "投资理财",
+    "Investment & Finance"
+  ]
+}

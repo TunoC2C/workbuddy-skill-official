@@ -1,0 +1,16 @@
+{
+  "name": "cangjie-skill",
+  "displayName": "把书蒸馏成可执行的技能",
+  "description": "把书蒸馏成可执行的技能（拆书、方法论提取）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/cangjie-skill"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development"
+  ]
+}

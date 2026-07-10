@@ -1,0 +1,18 @@
+{
+  "name": "awesome-design-md",
+  "displayName": "品牌设计风格专家",
+  "description": "54 个知名网站设计系统模板，一键复用品牌级 UI 风格",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/awesome-design-md"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "内容创作",
+    "OPC · Solo Business",
+    "Content Creation"
+  ]
+}

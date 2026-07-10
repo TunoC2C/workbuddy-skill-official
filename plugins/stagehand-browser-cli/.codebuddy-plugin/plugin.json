@@ -1,0 +1,16 @@
+{
+  "name": "stagehand-browser-cli",
+  "displayName": "Stagehand CLI 自然语言浏览器自动化",
+  "description": "Stagehand CLI 自然语言浏览器自动化（支持本地/云端）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/stagehand-browser-cli"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

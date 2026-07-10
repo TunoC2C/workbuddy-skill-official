@@ -1,0 +1,16 @@
+{
+  "name": "wechat-article-search",
+  "displayName": "搜索微信公众号文章",
+  "description": "搜索微信公众号文章（标题、摘要、发布时间、来源账号、链接）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/wechat-article-search"
+  ],
+  "version": "0.1.0",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

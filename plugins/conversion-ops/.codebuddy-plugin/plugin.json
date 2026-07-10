@@ -1,0 +1,18 @@
+{
+  "name": "conversion-ops",
+  "displayName": "CRO 审计与落地页转化优化",
+  "description": "CRO 审计与落地页转化优化，调查问卷转化为引流磁铁",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/conversion-ops"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "商业运营",
+    "内容创作",
+    "Business Operations",
+    "Content Creation"
+  ]
+}

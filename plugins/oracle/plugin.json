@@ -1,0 +1,16 @@
+{
+  "name": "oracle",
+  "displayName": "AI交叉审查",
+  "description": "调用第二个 AI 模型交叉审查代码",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/oracle"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

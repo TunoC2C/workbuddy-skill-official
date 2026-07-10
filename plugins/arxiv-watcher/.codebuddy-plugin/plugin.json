@@ -1,0 +1,18 @@
+{
+  "name": "arxiv-watcher",
+  "displayName": "ArXiv论文追踪",
+  "description": "搜索和总结 ArXiv 最新研究论文",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/arxiv-watcher"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "信息资讯",
+    "教育学习",
+    "News & Information",
+    "Education & Learning"
+  ]
+}

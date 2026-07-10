@@ -1,0 +1,18 @@
+{
+  "name": "fintech-engineer",
+  "displayName": "金融科技工程师",
+  "description": "金融科技工程专家：支付系统、银行API集成、PCI DSS/AML/KYC合规、安全交易架构",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/fintech-engineer"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "开发工具",
+    "投资理财",
+    "Development Tools",
+    "Investment & Finance"
+  ]
+}

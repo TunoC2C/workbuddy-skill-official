@@ -1,0 +1,16 @@
+{
+  "name": "wechatpay-product-coupon",
+  "displayName": "微信支付商品券",
+  "description": "微信支付商品券接入助手（选型、代码示例、排障）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/wechatpay-product-coupon"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

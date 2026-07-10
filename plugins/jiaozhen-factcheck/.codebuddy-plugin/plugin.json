@@ -1,0 +1,16 @@
+{
+  "name": "jiaozhen-factcheck",
+  "displayName": "事实查证与谣言识别",
+  "description": "事实查证与谣言识别，判断信息真伪与可靠性",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/jiaozhen-factcheck"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

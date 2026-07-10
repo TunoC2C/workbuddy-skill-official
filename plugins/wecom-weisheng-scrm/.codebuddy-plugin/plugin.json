@@ -1,0 +1,16 @@
+{
+  "name": "wecom-weisheng-scrm",
+  "displayName": "微盛企微管家SCRM",
+  "description": "微盛AI·企微管家提供的技能，帮助用户查询和管理企业微信 SCRM 中的客户、客户群、标签、活码、群发、跟进、聊天记录内容等业务数据，可询问AI当前支持的能力清单。",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/wecom-weisheng-scrm"
+  ],
+  "version": "1.0.3",
+  "keywords": [
+    "商业运营",
+    "Business Operations"
+  ]
+}

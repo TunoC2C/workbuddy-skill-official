@@ -1,0 +1,16 @@
+{
+  "name": "songsee",
+  "displayName": "音频可视化",
+  "description": "从音频生成频谱图和可视化",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/songsee"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

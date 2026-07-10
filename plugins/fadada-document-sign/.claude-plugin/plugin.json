@@ -1,0 +1,16 @@
+{
+  "name": "fadada-document-sign",
+  "displayName": "法大大电子签",
+  "description": "法大大电子签，支持合同发起、查询、撤回和下载全生命周期",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/fadada-document-sign"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "商业运营",
+    "Business Operations"
+  ]
+}

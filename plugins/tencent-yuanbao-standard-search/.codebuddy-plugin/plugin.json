@@ -1,0 +1,16 @@
+{
+  "name": "tencent-yuanbao-standard-search",
+  "displayName": "元宝搜索标准版",
+  "description": "元宝搜索标准版skill以互联网全网公开资源为基础，叠加腾讯优质内容生态，结合元宝APP联网搜索应用实践，从数据收录到智能检索召回，全链路构建AI友好搜索引擎。",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tencent-yuanbao-standard-search"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

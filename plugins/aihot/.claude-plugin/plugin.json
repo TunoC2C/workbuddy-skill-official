@@ -1,0 +1,16 @@
+{
+  "name": "aihot",
+  "displayName": "AIHOT AI 动态简报",
+  "description": "一句话查到 aihot.virxact.com 上每天精选的 AI 模型 / 产品 / 行业 / 论文动态，自动整理成中文简报，免配置 API Key。",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/aihot"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

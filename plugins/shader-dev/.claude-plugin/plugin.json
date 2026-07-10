@@ -1,0 +1,16 @@
+{
+  "name": "shader-dev",
+  "displayName": "GLSL Shader 开发",
+  "description": "GLSL Shader 视觉效果开发",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/shader-dev"
+  ],
+  "version": "1.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

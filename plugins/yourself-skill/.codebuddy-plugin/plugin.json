@@ -1,0 +1,16 @@
+{
+  "name": "yourself-skill",
+  "displayName": "自己.skill",
+  "description": "把自己蒸馏成 AI Skill，解构聊天记录与日记生成数字分身",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/yourself-skill"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

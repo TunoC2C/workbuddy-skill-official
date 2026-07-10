@@ -1,0 +1,16 @@
+{
+  "name": "markitdown-skill",
+  "displayName": "文档转 Markdown",
+  "description": "文档转 Markdown(PDF/Word/PPT/图片OCR/音频转写/网页)",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/markitdown-skill"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

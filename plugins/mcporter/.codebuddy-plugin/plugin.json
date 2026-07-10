@@ -1,0 +1,16 @@
+{
+  "name": "mcporter",
+  "displayName": "MCP管理器",
+  "description": "管理和调用 MCP 服务器与工具",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/mcporter"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

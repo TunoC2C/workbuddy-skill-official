@@ -1,0 +1,16 @@
+{
+  "name": "12306",
+  "displayName": "查询 12306 国内列车时刻、余票与站点信息",
+  "description": "查询 12306 国内列车时刻、余票与站点信息",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/12306"
+  ],
+  "version": "1.0.2",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

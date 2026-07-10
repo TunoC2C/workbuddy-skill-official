@@ -1,0 +1,16 @@
+{
+  "name": "tencent-musician-skills",
+  "displayName": "腾讯音乐人AI助手",
+  "description": "专门为腾讯音乐人打造的音乐智能体，提供智能数据分析、站外宣推建议等一站式服务",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tencent-musician-skills"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

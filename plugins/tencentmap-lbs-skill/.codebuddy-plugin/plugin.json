@@ -1,0 +1,16 @@
+{
+  "name": "tencentmap-lbs-skill",
+  "displayName": "腾讯地图位置服务",
+  "description": "腾讯地图位置服务，支持POI搜索、路径规划、旅游规划、周边搜索，轨迹数据可视化和地图数据可视化",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tencentmap-lbs-skill"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "skyline",
+  "displayName": "skyline渲染引擎",
+  "description": "微信小程序 Skyline 渲染引擎（组件、动画、路由、样式）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/skyline"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

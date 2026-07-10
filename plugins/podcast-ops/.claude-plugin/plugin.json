@@ -1,0 +1,18 @@
+{
+  "name": "podcast-ops",
+  "displayName": "播客内容拆解流水线",
+  "description": "播客内容拆解流水线，一期节目生成 20+ 跨平台内容",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/podcast-ops"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "内容创作",
+    "OPC · Solo Business",
+    "Content Creation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "flight-tracker",
+  "displayName": "实时航班追踪",
+  "description": "实时航班追踪，支持按地区、呼号、机场查询航班动态与时刻",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/flight-tracker"
+  ],
+  "version": "1.1.0",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

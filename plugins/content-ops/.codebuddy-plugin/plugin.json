@@ -1,0 +1,16 @@
+{
+  "name": "content-ops",
+  "displayName": "内容质量评分与专家评审面板",
+  "description": "内容质量评分与专家评审面板，递归迭代至 90+ 分",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/content-ops"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "cloudflare",
+  "displayName": "Cloudflare 平台开发与部署指南",
+  "description": "Cloudflare 平台开发与部署指南，覆盖 Workers、Pages、存储、AI 与安全",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/cloudflare"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "网站部署",
+    "开发工具",
+    "Website Deployment",
+    "Development Tools"
+  ]
+}

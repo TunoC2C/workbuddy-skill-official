@@ -1,0 +1,16 @@
+{
+  "name": "video-frames",
+  "displayName": "视频截帧",
+  "description": "从视频提取帧或短片段",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/video-frames"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

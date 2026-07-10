@@ -1,0 +1,16 @@
+{
+  "name": "andonq",
+  "displayName": "腾讯云智能客服领域虾",
+  "description": "腾讯云智能客服领域虾，支持工单、需求单、云产品问答、资源查询",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/andonq"
+  ],
+  "version": "2.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "migraq",
+  "displayName": "腾讯云迁移服务专家",
+  "description": "腾讯云迁移服务专家，支持跨云资源扫描、选型推荐、TCO 分析与迁移方案规划",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/migraq"
+  ],
+  "version": "1.1.6",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "browser",
+  "displayName": "Puppeteer 无头浏览器",
+  "description": "Puppeteer 无头浏览器，渲染 JS 页面并提取纯文本",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/browser"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

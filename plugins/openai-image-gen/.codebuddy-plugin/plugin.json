@@ -1,0 +1,16 @@
+{
+  "name": "openai-image-gen",
+  "displayName": "批量绘图",
+  "description": "批量生成图片并创建图库",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/openai-image-gen"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

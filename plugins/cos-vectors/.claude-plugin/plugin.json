@@ -1,0 +1,16 @@
+{
+  "name": "cos-vectors",
+  "displayName": "腾讯云COS向量",
+  "description": "腾讯云 COS 向量桶管理（索引、存储、相似度搜索）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/cos-vectors"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

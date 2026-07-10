@@ -1,0 +1,16 @@
+{
+  "name": "macro-monitor",
+  "displayName": "宏观数据监控",
+  "description": "每日自动采集宏观经济数据和政策信息并推送",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/macro-monitor"
+  ],
+  "version": "1.0.2",
+  "keywords": [
+    "投资理财",
+    "Investment & Finance"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "prompt-engineering-expert",
+  "displayName": "提示词工程专家",
+  "description": "提示词工程专家：编写、分析、优化提示词和 AI 指令，覆盖最佳实践与高级技巧",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/prompt-engineering-expert"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

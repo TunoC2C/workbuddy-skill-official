@@ -1,0 +1,16 @@
+{
+  "name": "open-novel-writing",
+  "displayName": "开放小说创作助手",
+  "description": "中文长篇小说创作助手，支持从想法到成书的模块化全流程",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/open-novel-writing"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

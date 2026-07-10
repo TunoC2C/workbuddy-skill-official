@@ -1,0 +1,16 @@
+{
+  "name": "diagnose",
+  "displayName": "系统化调试",
+  "description": "系统化调试：重现 → 假设 → 验证 → 修复 → 回归测试",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/diagnose"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

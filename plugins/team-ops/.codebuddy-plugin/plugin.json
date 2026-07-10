@@ -1,0 +1,16 @@
+{
+  "name": "team-ops",
+  "displayName": "团队绩效审计与会议行动项提取",
+  "description": "团队绩效审计与会议行动项提取，识别 A/B/C 员工",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/team-ops"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

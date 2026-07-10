@@ -1,0 +1,16 @@
+{
+  "name": "novel-writer",
+  "displayName": "章节正文生成器",
+  "description": "根据大纲和角色档案生成章节正文，支持风格控制和温度调节",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/novel-writer"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "deck-generator",
+  "displayName": "AI 驱动的演示文稿生成",
+  "description": "AI 驱动的演示文稿生成，统一视觉风格的幻灯片",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/deck-generator"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

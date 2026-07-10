@@ -1,0 +1,16 @@
+{
+  "name": "academic-tutor",
+  "displayName": "学业导师",
+  "description": "记住你的专业和进度，用苏格拉底式引导拆解思路，覆盖数理化/编程/经管/文史哲全学科",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/academic-tutor"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

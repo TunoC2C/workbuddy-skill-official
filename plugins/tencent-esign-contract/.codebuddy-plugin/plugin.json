@@ -1,0 +1,20 @@
+{
+  "name": "tencent-esign-contract",
+  "displayName": "腾讯电子签",
+  "description": "合同起草、审查、对比、法规检索轻松搞定，AI秒级响应，专业输出，效率翻倍，做你最安心的合同智能助手。",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tencent-esign-contract"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "效率工具",
+    "办公协同",
+    "OPC · Solo Business",
+    "Productivity Tools",
+    "Collaboration"
+  ]
+}

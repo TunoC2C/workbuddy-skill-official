@@ -1,0 +1,16 @@
+{
+  "name": "setup-pre-commit",
+  "displayName": "Pre-commit 钩子配置",
+  "description": "为 JS/TS 项目配置 Husky pre-commit hooks（lint-staged + Prettier + 类型检查 + 测试）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/setup-pre-commit"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

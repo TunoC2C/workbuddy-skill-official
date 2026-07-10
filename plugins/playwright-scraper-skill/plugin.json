@@ -1,0 +1,16 @@
+{
+  "name": "playwright-scraper-skill",
+  "displayName": "Playwright 隐身网页抓取",
+  "description": "Playwright 隐身网页抓取，支持反爬绕过与验证码处理",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/playwright-scraper-skill"
+  ],
+  "version": "1.2.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

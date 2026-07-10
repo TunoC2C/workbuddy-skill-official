@@ -1,0 +1,16 @@
+{
+  "name": "vercel-deploy",
+  "displayName": "部署和管理 Vercel 项目、环境变量与日志",
+  "description": "部署和管理 Vercel 项目、环境变量与日志",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/vercel-deploy"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "网站部署",
+    "Website Deployment"
+  ]
+}

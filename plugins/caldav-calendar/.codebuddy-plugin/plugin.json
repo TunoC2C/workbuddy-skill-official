@@ -1,0 +1,16 @@
+{
+  "name": "caldav-calendar",
+  "displayName": "CalDAV 日历",
+  "description": "同步和查询 CalDAV 日历（iCloud、Google、Fastmail、Nextcloud 等），仅支持 Linux",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/caldav-calendar"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

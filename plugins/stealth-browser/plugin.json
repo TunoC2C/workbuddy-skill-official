@@ -1,0 +1,16 @@
+{
+  "name": "stealth-browser",
+  "displayName": "四层反检测浏览器自动化",
+  "description": "四层反检测浏览器自动化，支持隐身登录与验证码绕过",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/stealth-browser"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

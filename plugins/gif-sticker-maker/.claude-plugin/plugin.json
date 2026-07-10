@@ -1,0 +1,16 @@
+{
+  "name": "gif-sticker-maker",
+  "displayName": "GIF 贴纸制作",
+  "description": "照片转动态 GIF 贴纸",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/gif-sticker-maker"
+  ],
+  "version": "1.2",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

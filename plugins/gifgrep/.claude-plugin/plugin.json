@@ -1,0 +1,16 @@
+{
+  "name": "gifgrep",
+  "displayName": "GIF搜索",
+  "description": "搜索和下载 GIF 动图",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/gifgrep"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

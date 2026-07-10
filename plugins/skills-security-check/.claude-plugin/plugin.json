@@ -1,0 +1,16 @@
+{
+  "name": "skills-security-check",
+  "displayName": "Skill安全审计（云鼎实验室）",
+  "description": "腾讯云鼎出品，Skill 安全审计工具",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/skills-security-check"
+  ],
+  "version": "1.0.2",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "api-gateway",
+  "displayName": "连接 100+ API 服务",
+  "description": "连接 100+ API 服务（Google、Microsoft、GitHub 等），通过 OAuth 管理授权",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/api-gateway"
+  ],
+  "version": "1.0.118",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

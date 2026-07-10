@@ -1,0 +1,16 @@
+{
+  "name": "canvas-design",
+  "displayName": "canvas-design（视觉设计）",
+  "description": "基于设计哲学创作精美视觉艺术（PNG/PDF）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/canvas-design"
+  ],
+  "version": "1.0.4",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

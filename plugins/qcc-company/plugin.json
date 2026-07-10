@@ -1,0 +1,18 @@
+{
+  "name": "qcc-company",
+  "displayName": "企查查（工商信息）",
+  "description": "查询和核实企业工商登记信息，支持股权、财务、高管等全维度企业背调",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/qcc-company"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "商业运营",
+    "OPC · Solo Business",
+    "Business Operations"
+  ]
+}

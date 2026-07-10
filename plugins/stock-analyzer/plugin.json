@@ -1,0 +1,16 @@
+{
+  "name": "stock-analyzer",
+  "displayName": "股票综合分析器",
+  "description": "基于东方财富的全球股票三维分析（基本面、新闻面、资金面）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/stock-analyzer"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "投资理财",
+    "Investment & Finance"
+  ]
+}

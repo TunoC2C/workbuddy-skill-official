@@ -1,0 +1,16 @@
+{
+  "name": "openai-whisper",
+  "displayName": "本地语音转文字",
+  "description": "本地语音转文字（无需 API 密钥）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/openai-whisper"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

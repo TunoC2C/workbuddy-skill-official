@@ -1,0 +1,16 @@
+{
+  "name": "my-novel-writer",
+  "displayName": "小说创作助手",
+  "description": "辅助创作长篇小说，支持人物设定、世界观管理和分章生成",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/my-novel-writer"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

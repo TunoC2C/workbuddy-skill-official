@@ -1,0 +1,16 @@
+{
+  "name": "openai-whisper-api",
+  "displayName": "语音转文字API",
+  "description": "通过 OpenAI API 转录音频",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/openai-whisper-api"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

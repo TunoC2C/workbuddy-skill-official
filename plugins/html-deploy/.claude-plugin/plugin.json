@@ -1,0 +1,16 @@
+{
+  "name": "html-deploy",
+  "displayName": "将单文件 HTML 快速发布为可分享公网链接",
+  "description": "将单文件 HTML 快速发布为可分享公网链接",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/html-deploy"
+  ],
+  "version": "1.3.1",
+  "keywords": [
+    "网站部署",
+    "Website Deployment"
+  ]
+}

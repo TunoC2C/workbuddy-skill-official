@@ -1,0 +1,16 @@
+{
+  "name": "static-app",
+  "displayName": "将静态网站或前端构建产物部署到 Static.app",
+  "description": "将静态网站或前端构建产物部署到 Static.app",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/static-app"
+  ],
+  "version": "1.0.4",
+  "keywords": [
+    "网站部署",
+    "Website Deployment"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "obsidian",
+  "displayName": "Obsidian 知识库管理与自动化",
+  "description": "Obsidian 知识库管理与自动化",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/obsidian"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

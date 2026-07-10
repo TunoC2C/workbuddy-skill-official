@@ -1,0 +1,16 @@
+{
+  "name": "travel-planning",
+  "displayName": "行程规划",
+  "description": "行程规划：多城市路线、预算优化、打包清单、签证时间表",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/travel-planning"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

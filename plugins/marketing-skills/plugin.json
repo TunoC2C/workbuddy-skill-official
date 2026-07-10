@@ -1,0 +1,18 @@
+{
+  "name": "marketing-skills",
+  "displayName": "营销技能库",
+  "description": "23个营销模块：CRO、SEO、文案、分析、投放、产品发布、社交媒体，含检查清单和即用模板",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/marketing-skills"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "商业运营",
+    "内容创作",
+    "Business Operations",
+    "Content Creation"
+  ]
+}

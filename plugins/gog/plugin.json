@@ -1,0 +1,16 @@
+{
+  "name": "gog",
+  "displayName": "Google全家桶",
+  "description": "Google Workspace 全家桶（邮件、日历、文档等）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/gog"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

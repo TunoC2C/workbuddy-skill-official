@@ -1,0 +1,18 @@
+{
+  "name": "ecomseer",
+  "displayName": "EcomSeer TikTok 电商数据",
+  "description": "TikTok Shop 电商数据：商品/爆品/达人/店铺/广告全链路分析",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/ecomseer"
+  ],
+  "version": "1.0.1",
+  "keywords": [
+    "OPC·一人公司",
+    "商业运营",
+    "OPC · Solo Business",
+    "Business Operations"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "habit-tracker",
+  "displayName": "习惯打卡",
+  "description": "通过打卡、连续记录和可视化培养良好习惯",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/habit-tracker"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

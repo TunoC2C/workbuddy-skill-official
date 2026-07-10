@@ -1,0 +1,16 @@
+{
+  "name": "shippage",
+  "displayName": "将 HTML 或 Markdown 快速发布为公网网页",
+  "description": "将 HTML 或 Markdown 快速发布为公网网页",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/shippage"
+  ],
+  "version": "1.2.0",
+  "keywords": [
+    "网站部署",
+    "Website Deployment"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "email-skill",
+  "displayName": "邮件管理",
+  "description": "邮件管理与自动化，支持多邮件服务商收发搜索",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/email-skill"
+  ],
+  "version": "0.1.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

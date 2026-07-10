@@ -1,0 +1,16 @@
+{
+  "name": "revenue-intelligence",
+  "displayName": "收入归因分析",
+  "description": "收入归因分析，销售通话洞察与客户报告自动生成",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/revenue-intelligence"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "商业运营",
+    "Business Operations"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "globepilot-ai-agent-2",
+  "displayName": "出境游全能助手",
+  "description": "出境游全能助手：签证查询、货币换算、机场状态、当地活动、文化贴士，无需 API Key",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/globepilot-ai-agent-2"
+  ],
+  "version": "1.0.2",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

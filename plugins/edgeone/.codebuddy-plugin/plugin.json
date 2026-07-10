@@ -1,0 +1,16 @@
+{
+  "name": "edgeone",
+  "displayName": "EdgeOne HTML 发布",
+  "description": "将 HTML 内容一键发布到 EdgeOne Pages 公网链接",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/edgeone"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "网站部署",
+    "Website Deployment"
+  ]
+}

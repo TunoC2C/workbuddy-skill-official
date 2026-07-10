@@ -1,0 +1,18 @@
+{
+  "name": "web-performance-audit",
+  "displayName": "部署后网站性能审计",
+  "description": "部署后网站性能审计，检查核心指标与加载瓶颈",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/web-performance-audit"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "网站部署",
+    "开发工具",
+    "Website Deployment",
+    "Development Tools"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ecommerce-copywriter",
+  "displayName": "电商爆款文案生成器",
+  "description": "电商卖家的爆款文案生成：标题、详情页、卖点、促销一站搞定",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/ecommerce-copywriter"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "商业运营",
+    "内容创作",
+    "OPC · Solo Business",
+    "Business Operations",
+    "Content Creation"
+  ]
+}

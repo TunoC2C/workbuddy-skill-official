@@ -1,0 +1,16 @@
+{
+  "name": "libtv-skill",
+  "displayName": "LibTV AI 创作",
+  "description": "通过 LibTV AI 平台生成和编辑图片/视频，支持文生图、文生视频、风格迁移等",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/libtv-skill"
+  ],
+  "version": "1.0.3",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

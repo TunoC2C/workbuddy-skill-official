@@ -1,0 +1,16 @@
+{
+  "name": "web-search-exa",
+  "displayName": "Exa 网络搜索",
+  "description": "基于 Exa 的神经网络搜索引擎，语义搜索、内容提取与深度研究",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/web-search-exa"
+  ],
+  "version": "2.0.0",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}

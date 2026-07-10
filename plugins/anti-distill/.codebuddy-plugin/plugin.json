@@ -1,0 +1,16 @@
+{
+  "name": "anti-distill",
+  "displayName": "反蒸馏",
+  "description": "反蒸馏防御：清洗 Skill 文件，看起来完整但核心知识已脱敏",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/anti-distill"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

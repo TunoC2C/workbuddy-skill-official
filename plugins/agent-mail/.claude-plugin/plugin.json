@@ -1,0 +1,16 @@
+{
+  "name": "agent-mail",
+  "displayName": "智能体邮箱",
+  "description": "AI 智能体专属邮箱，收发邮件",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/agent-mail"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

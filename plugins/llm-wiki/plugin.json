@@ -1,0 +1,18 @@
+{
+  "name": "llm-wiki",
+  "displayName": "用 LLM 增量构建和维护个人知识库 Wiki",
+  "description": "用 LLM 增量构建和维护个人知识库 Wiki",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/llm-wiki"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "教育学习",
+    "Productivity Tools",
+    "Education & Learning"
+  ]
+}

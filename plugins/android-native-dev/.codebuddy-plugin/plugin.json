@@ -1,0 +1,18 @@
+{
+  "name": "android-native-dev",
+  "displayName": "Android 原生开发",
+  "description": "Android 原生应用开发指南",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/android-native-dev"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "开发工具",
+    "OPC · Solo Business",
+    "Development Tools"
+  ]
+}

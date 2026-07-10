@@ -1,0 +1,16 @@
+{
+  "name": "cloudq",
+  "displayName": "多云统一管理与智能顾问",
+  "description": "多云统一管理与智能顾问，支持架构可视化、风险评估与 AI 运维问答",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/cloudq"
+  ],
+  "version": "1.6.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

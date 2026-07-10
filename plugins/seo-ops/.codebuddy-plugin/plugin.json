@@ -1,0 +1,18 @@
+{
+  "name": "seo-ops",
+  "displayName": "SEO 运营自动化",
+  "description": "SEO 运营自动化，内容攻击简报、GSC 优化与趋势侦察",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/seo-ops"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "商业运营",
+    "OPC · Solo Business",
+    "Business Operations"
+  ]
+}

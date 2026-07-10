@@ -1,0 +1,18 @@
+{
+  "name": "plan-tracker",
+  "displayName": "目标拆解与打卡助手",
+  "description": "每日任务提醒+完成打卡+进度可视化+AI预警，支持ABC三档任务和游戏化激励",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/plan-tracker"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "教育学习",
+    "效率工具",
+    "Education & Learning",
+    "Productivity Tools"
+  ]
+}

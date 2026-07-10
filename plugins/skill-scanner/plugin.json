@@ -1,0 +1,16 @@
+{
+  "name": "skill-scanner",
+  "displayName": "Skill安全扫描（朱雀实验室）",
+  "description": "朱雀实验室出品，Skill 安全风险扫描",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/skill-scanner"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

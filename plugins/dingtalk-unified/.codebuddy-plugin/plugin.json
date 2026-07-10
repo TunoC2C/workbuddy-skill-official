@@ -1,0 +1,16 @@
+{
+  "name": "dingtalk-unified",
+  "displayName": "钉钉套件",
+  "description": "钉钉 CLI 套件，覆盖消息、日历、待办、审批、考勤、日志、文档、AI 表格、钉盘、AI 听记、邮箱等 14 个产品能力",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/dingtalk-unified"
+  ],
+  "version": "1.0.4",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

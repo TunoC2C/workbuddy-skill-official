@@ -1,0 +1,16 @@
+{
+  "name": "playwright-browser-automation",
+  "displayName": "直接调用 Playwright API 实现浏览器自动化",
+  "description": "直接调用 Playwright API 实现浏览器自动化（无需 MCP）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/playwright-browser-automation"
+  ],
+  "version": "2.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

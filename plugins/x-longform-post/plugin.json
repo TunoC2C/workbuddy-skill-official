@@ -1,0 +1,18 @@
+{
+  "name": "x-longform-post",
+  "displayName": "撰写 X",
+  "description": "撰写 X(Twitter) 长文，创始人语气 + AI 去味检测",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/x-longform-post"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "内容创作",
+    "OPC · Solo Business",
+    "Content Creation"
+  ]
+}

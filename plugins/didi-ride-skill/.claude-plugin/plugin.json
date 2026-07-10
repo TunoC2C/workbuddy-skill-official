@@ -1,0 +1,16 @@
+{
+  "name": "didi-ride-skill",
+  "displayName": "滴滴打车",
+  "description": "滴滴打车：叫车、路线规划、订单查询",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/didi-ride-skill"
+  ],
+  "version": "1.1.3",
+  "keywords": [
+    "生活服务",
+    "Lifestyle Services"
+  ]
+}

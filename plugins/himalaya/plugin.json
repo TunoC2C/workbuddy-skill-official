@@ -1,0 +1,16 @@
+{
+  "name": "himalaya",
+  "displayName": "Himalaya邮件",
+  "description": "终端邮件管理（收发、搜索、多账户）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/himalaya"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "办公协同",
+    "Collaboration"
+  ]
+}

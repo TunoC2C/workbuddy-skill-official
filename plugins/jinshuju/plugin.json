@@ -1,0 +1,16 @@
+{
+  "name": "jinshuju",
+  "displayName": "金数据",
+  "description": "金数据（Jinshuju）表单平台操作专家，用一句话完成表单搭建、数据查询与批量修改、账单查询，替代登录后台手工操作。",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/jinshuju"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "效率工具",
+    "Productivity Tools"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "resume-assistant",
+  "displayName": "简历助手",
+  "description": "输入经历+目标岗位JD，生成针对性简历或润色改写，三维度防幻觉，支持中英双版和ATS友好PDF",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/resume-assistant"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "教育学习",
+    "Education & Learning"
+  ]
+}

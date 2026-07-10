@@ -1,0 +1,16 @@
+{
+  "name": "skill-creator",
+  "displayName": "技能创建指南",
+  "description": "创建和维护自定义技能的指南",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/skill-creator"
+  ],
+  "version": "0.1.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

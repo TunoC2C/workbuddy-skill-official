@@ -1,0 +1,16 @@
+{
+  "name": "summarize",
+  "displayName": "内容总结",
+  "description": "总结网页、PDF、音频和视频内容",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/summarize"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "skill-vetter",
+  "displayName": "安装前审查技能的安全性",
+  "description": "安装前审查技能的安全性",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/skill-vetter"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

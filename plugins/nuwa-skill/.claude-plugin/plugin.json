@@ -1,0 +1,16 @@
+{
+  "name": "nuwa-skill",
+  "displayName": "女娲",
+  "description": "蒸馏人物思维框架，生成可运行的人物 Skill",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/nuwa-skill"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

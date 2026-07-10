@@ -1,0 +1,20 @@
+{
+  "name": "cn-ecommerce-search",
+  "displayName": "中国电商搜索",
+  "description": "8 大中国电商平台商品搜索与跨平台商品信息查询，免 API Key",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/cn-ecommerce-search"
+  ],
+  "version": "2.0.0",
+  "keywords": [
+    "OPC·一人公司",
+    "生活服务",
+    "商业运营",
+    "OPC · Solo Business",
+    "Lifestyle Services",
+    "Business Operations"
+  ]
+}

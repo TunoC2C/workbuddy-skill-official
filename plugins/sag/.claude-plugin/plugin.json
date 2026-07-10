@@ -1,0 +1,16 @@
+{
+  "name": "sag",
+  "displayName": "文字转语音",
+  "description": "文字转语音（ElevenLabs）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/sag"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "内容创作",
+    "Content Creation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "agent-mbti",
+  "displayName": "MBTI人格诊断",
+  "description": "基于 MBTI 框架的 AI Agent 人格诊断与配置系统",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/agent-mbti"
+  ],
+  "version": "0.1.1",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

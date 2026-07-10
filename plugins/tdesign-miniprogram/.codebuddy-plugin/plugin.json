@@ -1,0 +1,16 @@
+{
+  "name": "tdesign-miniprogram",
+  "displayName": "TDesign 微信小程序组件",
+  "description": "TDesign 微信小程序组件库（60+ 组件、主题定制、AI 聊天）",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/tdesign-miniprogram"
+  ],
+  "version": "1.0.0",
+  "keywords": [
+    "开发工具",
+    "Development Tools"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "multi-search-engine",
+  "displayName": "多引擎搜索",
+  "description": "集成 17 个搜索引擎（8 国内 + 9 国际），无需 API",
+  "author": {
+    "name": "CodeBuddy"
+  },
+  "skills": [
+    "./skills/multi-search-engine"
+  ],
+  "version": "2.1.3",
+  "keywords": [
+    "信息资讯",
+    "News & Information"
+  ]
+}
