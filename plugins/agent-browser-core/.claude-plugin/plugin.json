@@ -1,6 +1,6 @@
 {
   "name": "agent-browser-core",
-  "displayName": "Agent Browser 网页自动化",
+  "displayName": "Agent Browser Core",
   "description": "基于 agent-browser CLI 的 AI 友好型网页自动化",
   "author": {
     "name": "CodeBuddy"

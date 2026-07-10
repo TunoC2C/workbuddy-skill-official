@@ -1,6 +1,6 @@
 {
   "name": "handoff",
-  "displayName": "将当前对话压缩为交接文档",
+  "displayName": "handoff",
   "description": "将当前对话压缩为交接文档，供下一个 Agent 无缝接续工作",
   "author": {
     "name": "CodeBuddy"

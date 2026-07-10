@@ -1,6 +1,6 @@
 {
   "name": "github-pages-auto-deploy",
-  "displayName": "配置 GitHub Pages 自动部署和自定义域名支持",
+  "displayName": "GitHub Pages Auto Deploy",
   "description": "配置 GitHub Pages 自动部署和自定义域名支持",
   "author": {
     "name": "CodeBuddy"

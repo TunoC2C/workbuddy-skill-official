@@ -1,6 +1,6 @@
 {
   "name": "tavily",
-  "displayName": "AI优化的网络搜索引擎",
+  "displayName": "Tavily AI Search",
   "description": "AI优化的网络搜索引擎，支持智能摘要、领域过滤和深度研究",
   "author": {
     "name": "CodeBuddy"

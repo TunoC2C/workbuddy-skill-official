@@ -1,6 +1,6 @@
 {
   "name": "stealth-browser",
-  "displayName": "四层反检测浏览器自动化",
+  "displayName": "Stealth Browser",
   "description": "四层反检测浏览器自动化，支持隐身登录与验证码绕过",
   "author": {
     "name": "CodeBuddy"

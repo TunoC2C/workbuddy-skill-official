@@ -1,6 +1,6 @@
 {
   "name": "zoom-out",
-  "displayName": "提升抽象层次",
+  "displayName": "zoom-out",
   "description": "提升抽象层次，快速获取陌生代码模块的全局地图与调用关系",
   "author": {
     "name": "CodeBuddy"

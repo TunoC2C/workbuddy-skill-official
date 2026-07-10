@@ -12,19 +12,6 @@ const sourceMarketplacePath = ".codebuddy-skill/marketplace.json";
 const claudeMarketplacePath = ".claude-plugin/marketplace.json";
 const codebuddyPluginMarketplacePath = ".codebuddy-plugin/marketplace.json";
 
-const chineseDisplayNameOverrides = new Map([
-  ["aihot", "AIHOT AI 动态简报"],
-  ["fbs-bookwriter", "福帮手长文档手稿工具链"],
-  ["promo-creator-skills", "产品宣传片制作"],
-  ["infographic-maker", "手绘信息图生成器"],
-  ["excalidraw-diagram", "Excalidraw 图解生成"],
-  ["airbnb", "Airbnb 房源搜索"],
-  ["setup-pre-commit", "Pre-commit 钩子配置"],
-  ["agent-browser-core", "Agent Browser 网页自动化"],
-  ["edgeone", "EdgeOne HTML 发布"],
-  ["web-deploy", "Web 通用部署指南"],
-]);
-
 function repoPath(...segments) {
   return path.join(repoRoot, ...segments);
 }
@@ -75,40 +62,8 @@ function preferredDescription(skill) {
   return skill.description_zh || skill.description || "";
 }
 
-function containsChinese(value) {
-  return /[\u3400-\u9fff]/.test(String(value || ""));
-}
-
-function compactDisplayName(value) {
-  const normalized = String(value || "").replace(/\s+/g, " ").trim();
-  if (normalized.length <= 32) {
-    return normalized;
-  }
-
-  // displayName 只承担列表识别职责，过长会挤压 Claude 插件列表的可读性。
-  return `${normalized.slice(0, 32)}...`;
-}
-
 function preferredDisplayName(skill) {
-  const override = chineseDisplayNameOverrides.get(skill.source);
-  if (override) {
-    return override;
-  }
-
-  if (containsChinese(skill.name)) {
-    return skill.name;
-  }
-
-  const description = typeof skill.description_zh === "string" ? skill.description_zh : "";
-  const firstClause = description.split(/[，。；;：:(（]/)[0]?.trim();
-  if (containsChinese(firstClause)) {
-    return compactDisplayName(firstClause);
-  }
-  if (containsChinese(description)) {
-    return compactDisplayName(description);
-  }
-
-  // 理论上官方市场应有中文描述；兜底保留原名，校验器会暴露这类源数据问题。
+  // displayName 严格来自源 marketplace 的 name 字段，避免生成器自行改写展示名。
   return skill.name;
 }
 

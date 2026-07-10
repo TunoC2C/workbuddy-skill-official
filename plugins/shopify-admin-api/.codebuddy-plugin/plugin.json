@@ -1,6 +1,6 @@
 {
   "name": "shopify-admin-api",
-  "displayName": "Shopify Admin REST API 完整封装",
+  "displayName": "Shopify Admin API",
   "description": "Shopify Admin REST API 完整封装：订单、商品、库存、客户全管理",
   "author": {
     "name": "CodeBuddy"

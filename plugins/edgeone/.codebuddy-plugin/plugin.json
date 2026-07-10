@@ -1,6 +1,6 @@
 {
   "name": "edgeone",
-  "displayName": "EdgeOne HTML 发布",
+  "displayName": "EdgeOne HTML Deploy",
   "description": "将 HTML 内容一键发布到 EdgeOne Pages 公网链接",
   "author": {
     "name": "CodeBuddy"

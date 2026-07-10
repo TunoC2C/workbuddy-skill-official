@@ -1,6 +1,6 @@
 {
   "name": "html-deploy",
-  "displayName": "将单文件 HTML 快速发布为可分享公网链接",
+  "displayName": "HTML Deploy",
   "description": "将单文件 HTML 快速发布为可分享公网链接",
   "author": {
     "name": "CodeBuddy"

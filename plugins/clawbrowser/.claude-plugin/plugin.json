@@ -1,6 +1,6 @@
 {
   "name": "clawbrowser",
-  "displayName": "通过 Playwright CLI 驱动浏览器",
+  "displayName": "ClawBrowser",
   "description": "通过 Playwright CLI 驱动浏览器（快照、表单、会话管理）",
   "author": {
     "name": "CodeBuddy"

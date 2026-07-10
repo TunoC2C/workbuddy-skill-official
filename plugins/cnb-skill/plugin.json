@@ -1,6 +1,6 @@
 {
   "name": "cnb-skill",
-  "displayName": "CNB 平台全功能操作",
+  "displayName": "cnb.cool",
   "description": "CNB 平台全功能操作（仓库、Issue、PR、流水线、制品库）",
   "author": {
     "name": "CodeBuddy"

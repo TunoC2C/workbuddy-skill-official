@@ -1,6 +1,6 @@
 {
   "name": "infographic-maker",
-  "displayName": "手绘信息图生成器",
+  "displayName": "Infographic Maker",
   "description": "把文章、概念和数据提炼成手绘卡通信息图",
   "author": {
     "name": "CodeBuddy"

@@ -1,6 +1,6 @@
 {
   "name": "cangjie-skill",
-  "displayName": "把书蒸馏成可执行的技能",
+  "displayName": "book2skill",
   "description": "把书蒸馏成可执行的技能（拆书、方法论提取）",
   "author": {
     "name": "CodeBuddy"

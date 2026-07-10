@@ -1,6 +1,6 @@
 {
   "name": "12306",
-  "displayName": "查询 12306 国内列车时刻、余票与站点信息",
+  "displayName": "12306",
   "description": "查询 12306 国内列车时刻、余票与站点信息",
   "author": {
     "name": "CodeBuddy"

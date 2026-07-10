@@ -1,6 +1,6 @@
 {
   "name": "playwright-scraper-skill",
-  "displayName": "Playwright 隐身网页抓取",
+  "displayName": "Playwright Scraper",
   "description": "Playwright 隐身网页抓取，支持反爬绕过与验证码处理",
   "author": {
     "name": "CodeBuddy"

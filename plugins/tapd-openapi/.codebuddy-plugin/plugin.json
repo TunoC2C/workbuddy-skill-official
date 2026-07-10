@@ -1,6 +1,6 @@
 {
   "name": "tapd-openapi",
-  "displayName": "TAPD 项目管理平台操作",
+  "displayName": "TAPD",
   "description": "TAPD 项目管理平台操作（需求、缺陷、任务、迭代、Wiki、评论、工时、附件）",
   "author": {
     "name": "CodeBuddy"

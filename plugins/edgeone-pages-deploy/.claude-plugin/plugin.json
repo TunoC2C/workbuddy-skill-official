@@ -1,6 +1,6 @@
 {
   "name": "edgeone-pages-deploy",
-  "displayName": "将前端或全栈项目部署到腾讯 EdgeOne Pages",
+  "displayName": "EdgeOne Pages Deploy",
   "description": "将前端或全栈项目部署到腾讯 EdgeOne Pages",
   "author": {
     "name": "CodeBuddy"

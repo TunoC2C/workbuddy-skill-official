@@ -1,6 +1,6 @@
 {
   "name": "gmail",
-  "displayName": "通过 Gmail API 收发邮件、管理标签和草稿",
+  "displayName": "Gmail",
   "description": "通过 Gmail API 收发邮件、管理标签和草稿",
   "author": {
     "name": "CodeBuddy"

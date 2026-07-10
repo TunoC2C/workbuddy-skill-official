@@ -1,6 +1,6 @@
 {
   "name": "flight-tracker",
-  "displayName": "实时航班追踪",
+  "displayName": "flight-tracker",
   "description": "实时航班追踪，支持按地区、呼号、机场查询航班动态与时刻",
   "author": {
     "name": "CodeBuddy"

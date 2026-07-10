@@ -1,6 +1,6 @@
 {
   "name": "darwin-skill",
-  "displayName": "自主优化 Agent Skill",
+  "displayName": "darwin-skill",
   "description": "自主优化 Agent Skill（8维评分、棘轮机制、自动改进）",
   "author": {
     "name": "CodeBuddy"

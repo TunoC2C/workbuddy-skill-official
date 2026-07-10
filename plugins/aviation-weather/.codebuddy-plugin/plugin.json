@@ -1,6 +1,6 @@
 {
   "name": "aviation-weather",
-  "displayName": "获取 METAR/TAF 航空气象数据",
+  "displayName": "aviation-weather",
   "description": "获取 METAR/TAF 航空气象数据，飞行前天气简报，无需 API Key",
   "author": {
     "name": "CodeBuddy"

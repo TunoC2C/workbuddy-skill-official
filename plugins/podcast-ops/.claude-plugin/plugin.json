@@ -1,6 +1,6 @@
 {
   "name": "podcast-ops",
-  "displayName": "播客内容拆解流水线",
+  "displayName": "podcast-ops",
   "description": "播客内容拆解流水线，一期节目生成 20+ 跨平台内容",
   "author": {
     "name": "CodeBuddy"

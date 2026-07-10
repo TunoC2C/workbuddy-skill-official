@@ -1,6 +1,6 @@
 {
   "name": "team-ops",
-  "displayName": "团队绩效审计与会议行动项提取",
+  "displayName": "team-ops",
   "description": "团队绩效审计与会议行动项提取，识别 A/B/C 员工",
   "author": {
     "name": "CodeBuddy"

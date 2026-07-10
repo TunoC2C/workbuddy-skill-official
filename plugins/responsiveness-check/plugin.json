@@ -1,6 +1,6 @@
 {
   "name": "responsiveness-check",
-  "displayName": "多视口响应式检查",
+  "displayName": "Responsiveness Check",
   "description": "多视口响应式检查，定位页面布局断点问题",
   "author": {
     "name": "CodeBuddy"

@@ -1,6 +1,6 @@
 {
   "name": "sales-playbook",
-  "displayName": "基于价值的定价与销售剧本",
+  "displayName": "sales-playbook",
   "description": "基于价值的定价与销售剧本，通话分析与报价打包",
   "author": {
     "name": "CodeBuddy"

@@ -32,8 +32,8 @@ node scripts/generate-claude-marketplace.mjs --check
 生成逻辑以 `.codebuddy-skill/marketplace.json` 为唯一数据源：
 
 - `plugins[].name` 使用原 `source`，保持英文安装 ID 稳定。
-- `plugins[].displayName` 优先使用含中文的原 `name`；原 `name` 不含中文时，从 `description_zh` 提炼中文短名。
-- `plugins[].description` 优先使用原 `description_zh`，缺失时回退到 `description`。
+- `plugins[].displayName` 严格使用原 `name`，不做自动提炼或改写。
+- `plugins[].description` 按当前示例使用原 `description_zh`，缺失时回退到 `description`。
 - 每个插件 manifest 的 `skills` 指向插件内部的 `./skills/<source>`，避免 Claude Code 安装后依赖插件目录外的相对路径。
 - `version` 优先使用 marketplace 版本，缺失时读取 `SKILL.md` frontmatter；两处都缺失时不伪造版本，Claude CLI 会给出 warning。
 

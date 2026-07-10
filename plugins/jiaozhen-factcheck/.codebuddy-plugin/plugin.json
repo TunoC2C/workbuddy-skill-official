@@ -1,6 +1,6 @@
 {
   "name": "jiaozhen-factcheck",
-  "displayName": "事实查证与谣言识别",
+  "displayName": "jiaozhen-factcheck",
   "description": "事实查证与谣言识别，判断信息真伪与可靠性",
   "author": {
     "name": "CodeBuddy"

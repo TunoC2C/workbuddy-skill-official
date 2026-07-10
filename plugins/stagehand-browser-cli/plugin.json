@@ -1,6 +1,6 @@
 {
   "name": "stagehand-browser-cli",
-  "displayName": "Stagehand CLI 自然语言浏览器自动化",
+  "displayName": "Stagehand Browser CLI",
   "description": "Stagehand CLI 自然语言浏览器自动化（支持本地/云端）",
   "author": {
     "name": "CodeBuddy"

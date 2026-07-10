@@ -1,6 +1,6 @@
 {
   "name": "skill-vetter",
-  "displayName": "安装前审查技能的安全性",
+  "displayName": "skill-vetter",
   "description": "安装前审查技能的安全性",
   "author": {
     "name": "CodeBuddy"

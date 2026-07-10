@@ -1,6 +1,6 @@
 {
   "name": "deck-generator",
-  "displayName": "AI 驱动的演示文稿生成",
+  "displayName": "deck-generator",
   "description": "AI 驱动的演示文稿生成，统一视觉风格的幻灯片",
   "author": {
     "name": "CodeBuddy"

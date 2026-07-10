@@ -1,6 +1,6 @@
 {
   "name": "cloudflare-worker-builder",
-  "displayName": "脚手架并部署 Cloudflare Worker 全栈应用",
+  "displayName": "Cloudflare Worker Builder",
   "description": "脚手架并部署 Cloudflare Worker 全栈应用",
   "author": {
     "name": "CodeBuddy"

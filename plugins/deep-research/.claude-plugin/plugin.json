@@ -1,6 +1,6 @@
 {
   "name": "deep-research",
-  "displayName": "结构化深度调研工作流",
+  "displayName": "Deep Research",
   "description": "结构化深度调研工作流，支持大纲生成、并行搜索、报告输出",
   "author": {
     "name": "CodeBuddy"

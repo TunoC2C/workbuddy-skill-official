@@ -1,6 +1,6 @@
 {
   "name": "playwright-browser-automation",
-  "displayName": "直接调用 Playwright API 实现浏览器自动化",
+  "displayName": "Playwright Browser Automation",
   "description": "直接调用 Playwright API 实现浏览器自动化（无需 MCP）",
   "author": {
     "name": "CodeBuddy"

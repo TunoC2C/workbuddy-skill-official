@@ -1,6 +1,6 @@
 {
   "name": "porteden-email",
-  "displayName": "安全邮件管理",
+  "displayName": "PortEden Email",
   "description": "安全邮件管理，支持 Gmail/Outlook/Exchange 多账户",
   "author": {
     "name": "CodeBuddy"

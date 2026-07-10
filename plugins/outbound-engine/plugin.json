@@ -1,6 +1,6 @@
 {
   "name": "outbound-engine",
-  "displayName": "自动化外拓邮件引擎",
+  "displayName": "outbound-engine",
   "description": "自动化外拓邮件引擎，从 ICP 定义到邮件入站全流程",
   "author": {
     "name": "CodeBuddy"

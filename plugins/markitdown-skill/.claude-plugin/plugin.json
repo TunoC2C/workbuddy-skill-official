@@ -1,6 +1,6 @@
 {
   "name": "markitdown-skill",
-  "displayName": "文档转 Markdown",
+  "displayName": "MarkItDown",
   "description": "文档转 Markdown(PDF/Word/PPT/图片OCR/音频转写/网页)",
   "author": {
     "name": "CodeBuddy"

@@ -1,6 +1,6 @@
 {
   "name": "browserwing",
-  "displayName": "BrowserWing HTTP API 浏览器自动化",
+  "displayName": "BrowserWing",
   "description": "BrowserWing HTTP API 浏览器自动化（导航、交互、数据提取）",
   "author": {
     "name": "CodeBuddy"

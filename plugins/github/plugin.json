@@ -1,6 +1,6 @@
 {
   "name": "github",
-  "displayName": "管理 GitHub Issues、PR 和 CI",
+  "displayName": "github",
   "description": "管理 GitHub Issues、PR 和 CI",
   "author": {
     "name": "CodeBuddy"

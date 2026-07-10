@@ -1,6 +1,6 @@
 {
   "name": "llm-wiki",
-  "displayName": "用 LLM 增量构建和维护个人知识库 Wiki",
+  "displayName": "Karpathy LLM Wiki",
   "description": "用 LLM 增量构建和维护个人知识库 Wiki",
   "author": {
     "name": "CodeBuddy"

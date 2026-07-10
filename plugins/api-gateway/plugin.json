@@ -1,6 +1,6 @@
 {
   "name": "api-gateway",
-  "displayName": "连接 100+ API 服务",
+  "displayName": "API Gateway",
   "description": "连接 100+ API 服务（Google、Microsoft、GitHub 等），通过 OAuth 管理授权",
   "author": {
     "name": "CodeBuddy"

@@ -1,6 +1,6 @@
 {
   "name": "static-app",
-  "displayName": "将静态网站或前端构建产物部署到 Static.app",
+  "displayName": "Static App",
   "description": "将静态网站或前端构建产物部署到 Static.app",
   "author": {
     "name": "CodeBuddy"

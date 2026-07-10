@@ -1,6 +1,6 @@
 {
   "name": "browser-cash",
-  "displayName": "Browser.cash 云端反封锁浏览器会话",
+  "displayName": "Browser.cash",
   "description": "Browser.cash 云端反封锁浏览器会话（绕过 Cloudflare 等）",
   "author": {
     "name": "CodeBuddy"

@@ -1,6 +1,6 @@
 {
   "name": "open-lesson",
-  "displayName": "苏格拉底式 AI 辅导",
+  "displayName": "openLesson",
   "description": "苏格拉底式 AI 辅导：生成学习计划、音频对话式教学、诊断推理差距",
   "author": {
     "name": "CodeBuddy"

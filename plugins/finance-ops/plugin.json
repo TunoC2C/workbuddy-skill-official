@@ -1,6 +1,6 @@
 {
   "name": "finance-ops",
-  "displayName": "AI CFO 助手",
+  "displayName": "finance-ops",
   "description": "AI CFO 助手，财务简报、成本分析与场景建模",
   "author": {
     "name": "CodeBuddy"

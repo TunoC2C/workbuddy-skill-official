@@ -1,6 +1,6 @@
 {
   "name": "capability-evolver",
-  "displayName": "AI Agent 自演化引擎",
+  "displayName": "capability-evolver",
   "description": "AI Agent 自演化引擎，分析运行历史并自动优化能力",
   "author": {
     "name": "CodeBuddy"

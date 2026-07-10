@@ -1,6 +1,6 @@
 {
   "name": "excalidraw-diagram",
-  "displayName": "Excalidraw 图解生成",
+  "displayName": "Excalidraw Diagram",
   "description": "Excalidraw 图解生成与渲染校验",
   "author": {
     "name": "CodeBuddy"

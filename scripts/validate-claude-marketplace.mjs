@@ -9,19 +9,6 @@ const sourceMarketplacePath = ".codebuddy-skill/marketplace.json";
 const claudeMarketplacePath = ".claude-plugin/marketplace.json";
 const codebuddyPluginMarketplacePath = ".codebuddy-plugin/marketplace.json";
 
-const chineseDisplayNameOverrides = new Map([
-  ["aihot", "AIHOT AI 动态简报"],
-  ["fbs-bookwriter", "福帮手长文档手稿工具链"],
-  ["promo-creator-skills", "产品宣传片制作"],
-  ["infographic-maker", "手绘信息图生成器"],
-  ["excalidraw-diagram", "Excalidraw 图解生成"],
-  ["airbnb", "Airbnb 房源搜索"],
-  ["setup-pre-commit", "Pre-commit 钩子配置"],
-  ["agent-browser-core", "Agent Browser 网页自动化"],
-  ["edgeone", "EdgeOne HTML 发布"],
-  ["web-deploy", "Web 通用部署指南"],
-]);
-
 function repoPath(...segments) {
   return path.join(repoRoot, ...segments);
 }
@@ -62,39 +49,8 @@ function preferredDescription(skill) {
   return skill.description_zh || skill.description || "";
 }
 
-function containsChinese(value) {
-  return /[\u3400-\u9fff]/.test(String(value || ""));
-}
-
-function compactDisplayName(value) {
-  const normalized = String(value || "").replace(/\s+/g, " ").trim();
-  if (normalized.length <= 32) {
-    return normalized;
-  }
-
-  // 校验器复用生成器的截断策略，确保 displayName 不因过长描述变成列表噪音。
-  return `${normalized.slice(0, 32)}...`;
-}
-
 function preferredDisplayName(skill) {
-  const override = chineseDisplayNameOverrides.get(skill.source);
-  if (override) {
-    return override;
-  }
-
-  if (containsChinese(skill.name)) {
-    return skill.name;
-  }
-
-  const description = typeof skill.description_zh === "string" ? skill.description_zh : "";
-  const firstClause = description.split(/[，。；;：:(（]/)[0]?.trim();
-  if (containsChinese(firstClause)) {
-    return compactDisplayName(firstClause);
-  }
-  if (containsChinese(description)) {
-    return compactDisplayName(description);
-  }
-
+  // displayName 必须严格来自源 marketplace 的 name 字段，避免生成器自行改写展示名。
   return skill.name;
 }
 
@@ -155,9 +111,6 @@ function comparePluginEntry(issues, prefix, actual, expected) {
   assertEqual(issues, `${prefix}.source`, actual?.source, expected.source);
   assertEqual(issues, `${prefix}.displayName`, actual?.displayName, expected.displayName);
   assertEqual(issues, `${prefix}.description`, actual?.description, expected.description);
-  if (!containsChinese(actual?.displayName)) {
-    issues.push(`${prefix}.displayName must contain Chinese text`);
-  }
 }
 
 function compareManifest(issues, prefix, actual, expected) {
@@ -166,9 +119,6 @@ function compareManifest(issues, prefix, actual, expected) {
   assertEqual(issues, `${prefix}.description`, actual?.description, expected.description);
   assertEqual(issues, `${prefix}.author.name`, actual?.author?.name, expected.author.name);
   assertEqual(issues, `${prefix}.skills[0]`, actual?.skills?.[0], expected.skills[0]);
-  if (!containsChinese(actual?.displayName)) {
-    issues.push(`${prefix}.displayName must contain Chinese text`);
-  }
 
   // version 和 keywords 仅在源数据存在时校验，避免要求所有旧 skill 补齐元数据。
   if (expected.version) {

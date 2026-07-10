@@ -1,6 +1,6 @@
 {
   "name": "netlify-deploy",
-  "displayName": "使用 Netlify CLI 部署和管理静态网站",
+  "displayName": "Netlify Deploy",
   "description": "使用 Netlify CLI 部署和管理静态网站",
   "author": {
     "name": "CodeBuddy"

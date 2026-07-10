@@ -1,6 +1,6 @@
 {
   "name": "flights-search",
-  "displayName": "通过 Google Flights 搜索航班",
+  "displayName": "flights-search",
   "description": "通过 Google Flights 搜索航班，支持城市名、舱位筛选和预订链接",
   "author": {
     "name": "CodeBuddy"

@@ -1,6 +1,6 @@
 {
   "name": "agent-team-orchestration",
-  "displayName": "多智能体团队编排",
+  "displayName": "Agent Team Orchestration",
   "description": "多智能体团队编排：角色定义、任务流转、交接协议与质量门禁",
   "author": {
     "name": "CodeBuddy"

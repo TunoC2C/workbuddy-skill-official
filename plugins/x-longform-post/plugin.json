@@ -1,6 +1,6 @@
 {
   "name": "x-longform-post",
-  "displayName": "撰写 X",
+  "displayName": "x-longform-post",
   "description": "撰写 X(Twitter) 长文，创始人语气 + AI 去味检测",
   "author": {
     "name": "CodeBuddy"

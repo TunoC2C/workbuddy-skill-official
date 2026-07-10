@@ -1,6 +1,6 @@
 {
   "name": "wechat-article-search",
-  "displayName": "搜索微信公众号文章",
+  "displayName": "wechat-article-search",
   "description": "搜索微信公众号文章（标题、摘要、发布时间、来源账号、链接）",
   "author": {
     "name": "CodeBuddy"

@@ -1,6 +1,6 @@
 {
   "name": "us-stock-analysis",
-  "displayName": "美股综合分析",
+  "displayName": "US Stock Analysis",
   "description": "美股综合分析（基本面、技术面、估值、对比报告）",
   "author": {
     "name": "CodeBuddy"

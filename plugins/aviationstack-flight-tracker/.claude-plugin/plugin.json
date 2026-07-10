@@ -1,6 +1,6 @@
 {
   "name": "aviationstack-flight-tracker",
-  "displayName": "实时航班追踪",
+  "displayName": "aviationstack-flight-tracker",
   "description": "实时航班追踪：登机口、延误、飞行位置，类 Flighty 体验（需 API Key）",
   "author": {
     "name": "CodeBuddy"

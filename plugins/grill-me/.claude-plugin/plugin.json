@@ -1,6 +1,6 @@
 {
   "name": "grill-me",
-  "displayName": "深度追问式方案审查",
+  "displayName": "grill-me",
   "description": "深度追问式方案审查：逐层拆解设计决策，直到达成共识",
   "author": {
     "name": "CodeBuddy"

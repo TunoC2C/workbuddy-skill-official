@@ -44,13 +44,13 @@
     {
       "name": "cnb-skill",
       "source": "./plugins/cnb-skill",
-      "displayName": "CNB 平台全功能操作",
+      "displayName": "cnb.cool",
       "description": "CNB 平台全功能操作（仓库、Issue、PR、流水线、制品库）"
     },
     {
       "name": "aihot",
       "source": "./plugins/aihot",
-      "displayName": "AIHOT AI 动态简报",
+      "displayName": "AIHOT",
       "description": "一句话查到 aihot.virxact.com 上每天精选的 AI 模型 / 产品 / 行业 / 论文动态，自动整理成中文简报，免配置 API Key。"
     },
     {
@@ -62,13 +62,13 @@
     {
       "name": "fbs-bookwriter",
       "source": "./plugins/fbs-bookwriter",
-      "displayName": "福帮手长文档手稿工具链",
+      "displayName": "fbs-bookwriter",
       "description": "福帮手出品 | 高质量长文档手稿工具链：书籍、手册、白皮书、行业指南、长篇报道、深度专题；支持联网查证（宿主允许时启用，离线自动降级）、S/P/C/B 分层审校、中文排版与 MD/HTML 交付。触发词：福帮手、福帮手写书skill、福帮手写书、写书、出书、写长篇、写手册、写白皮书、写行业指南、协作写书、定大纲、写章节、封面、插图、排版构建、导出、去AI味、质量自检、图文书、写报道、写深度稿、写特稿、写专题、写调查报道、写长文、拆书改写、海外本地化改写、爆款结构改写、激活原料、原料盘点、整理素材"
     },
     {
       "name": "tapd-openapi",
       "source": "./plugins/tapd-openapi",
-      "displayName": "TAPD 项目管理平台操作",
+      "displayName": "TAPD",
       "description": "TAPD 项目管理平台操作（需求、缺陷、任务、迭代、Wiki、评论、工时、附件）"
     },
     {
@@ -92,7 +92,7 @@
     {
       "name": "teachany",
       "source": "./plugins/teachany",
-      "displayName": "K12 互动课件开发技能",
+      "displayName": "TeachAny",
       "description": "K12 互动课件开发技能：用于制作或优化学科课件、教学动画、AI 学伴、TTS、知识图谱、PBL 学习路径与 TeachAny 发布。"
     },
     {
@@ -146,7 +146,7 @@
     {
       "name": "darwin-skill",
       "source": "./plugins/darwin-skill",
-      "displayName": "自主优化 Agent Skill",
+      "displayName": "darwin-skill",
       "description": "自主优化 Agent Skill（8维评分、棘轮机制、自动改进）"
     },
     {
@@ -164,7 +164,7 @@
     {
       "name": "workrally",
       "source": "./plugins/workrally",
-      "displayName": "WorkRally AI 内容创作",
+      "displayName": "WorkRally",
       "description": "WorkRally AI 内容创作（生图、生视频、画布、素材管理）"
     },
     {
@@ -218,7 +218,7 @@
     {
       "name": "andonq",
       "source": "./plugins/andonq",
-      "displayName": "腾讯云智能客服领域虾",
+      "displayName": "AndonQ",
       "description": "腾讯云智能客服领域虾，支持工单、需求单、云产品问答、资源查询"
     },
     {
@@ -242,7 +242,7 @@
     {
       "name": "cloudq",
       "source": "./plugins/cloudq",
-      "displayName": "多云统一管理与智能顾问",
+      "displayName": "CloudQ",
       "description": "多云统一管理与智能顾问，支持架构可视化、风险评估与 AI 运维问答"
     },
     {
@@ -254,13 +254,13 @@
     {
       "name": "jiaozhen-factcheck",
       "source": "./plugins/jiaozhen-factcheck",
-      "displayName": "事实查证与谣言识别",
+      "displayName": "jiaozhen-factcheck",
       "description": "事实查证与谣言识别，判断信息真伪与可靠性"
     },
     {
       "name": "migraq",
       "source": "./plugins/migraq",
-      "displayName": "腾讯云迁移服务专家",
+      "displayName": "MigraQ",
       "description": "腾讯云迁移服务专家，支持跨云资源扫描、选型推荐、TCO 分析与迁移方案规划"
     },
     {
@@ -272,7 +272,7 @@
     {
       "name": "tencent-weather",
       "source": "./plugins/tencent-weather",
-      "displayName": "中国各地实时天气和天气预报信息查询",
+      "displayName": "tencent-weather",
       "description": "中国各地实时天气和天气预报信息查询，覆盖市级和区县级行政区"
     },
     {
@@ -338,7 +338,7 @@
     {
       "name": "tencentmap-lbs-skill",
       "source": "./plugins/tencentmap-lbs-skill",
-      "displayName": "腾讯地图位置服务",
+      "displayName": "tencentmap-lbs-skill",
       "description": "腾讯地图位置服务，支持POI搜索、路径规划、旅游规划、周边搜索，轨迹数据可视化和地图数据可视化"
     },
     {
@@ -362,7 +362,7 @@
     {
       "name": "wechat-publisher",
       "source": "./plugins/wechat-publisher",
-      "displayName": "一键发布 Markdown 到微信公众号草稿箱",
+      "displayName": "Wechat Publisher",
       "description": "一键发布 Markdown 到微信公众号草稿箱（多主题、代码高亮、图片自动上传）"
     },
     {
@@ -374,7 +374,7 @@
     {
       "name": "wechat-article-search",
       "source": "./plugins/wechat-article-search",
-      "displayName": "搜索微信公众号文章",
+      "displayName": "wechat-article-search",
       "description": "搜索微信公众号文章（标题、摘要、发布时间、来源账号、链接）"
     },
     {
@@ -428,13 +428,13 @@
     {
       "name": "promo-creator-skills",
       "source": "./plugins/promo-creator-skills",
-      "displayName": "产品宣传片制作",
+      "displayName": "Promo Creator",
       "description": "产品宣传片全流程制作，涵盖简报、分镜、素材、剪辑、配乐到交付"
     },
     {
       "name": "guizang-ppt-skill",
       "source": "./plugins/guizang-ppt-skill",
-      "displayName": "歸藏的 PPT Skills",
+      "displayName": "Magazine Web PPT",
       "description": "歸藏的 PPT Skills，生成高质量网页 PPT、演讲 deck 与多比例封面，内置电子杂志风和瑞士国际主义两套视觉系统。"
     },
     {
@@ -446,7 +446,7 @@
     {
       "name": "obsidian",
       "source": "./plugins/obsidian",
-      "displayName": "Obsidian 知识库管理与自动化",
+      "displayName": "obsidian",
       "description": "Obsidian 知识库管理与自动化"
     },
     {
@@ -512,49 +512,49 @@
     {
       "name": "caveman",
       "source": "./plugins/caveman",
-      "displayName": "超压缩沟通模式",
+      "displayName": "caveman",
       "description": "超压缩沟通模式：去除废话保留技术精度，节省约 75% token"
     },
     {
       "name": "diagnose",
       "source": "./plugins/diagnose",
-      "displayName": "系统化调试",
+      "displayName": "diagnose",
       "description": "系统化调试：重现 → 假设 → 验证 → 修复 → 回归测试"
     },
     {
       "name": "grill-me",
       "source": "./plugins/grill-me",
-      "displayName": "深度追问式方案审查",
+      "displayName": "grill-me",
       "description": "深度追问式方案审查：逐层拆解设计决策，直到达成共识"
     },
     {
       "name": "handoff",
       "source": "./plugins/handoff",
-      "displayName": "将当前对话压缩为交接文档",
+      "displayName": "handoff",
       "description": "将当前对话压缩为交接文档，供下一个 Agent 无缝接续工作"
     },
     {
       "name": "setup-pre-commit",
       "source": "./plugins/setup-pre-commit",
-      "displayName": "Pre-commit 钩子配置",
+      "displayName": "setup-pre-commit",
       "description": "为 JS/TS 项目配置 Husky pre-commit hooks（lint-staged + Prettier + 类型检查 + 测试）"
     },
     {
       "name": "tdd",
       "source": "./plugins/tdd",
-      "displayName": "测试驱动开发",
+      "displayName": "tdd",
       "description": "测试驱动开发：红→绿→重构，以行为测试驱动实现"
     },
     {
       "name": "zoom-out",
       "source": "./plugins/zoom-out",
-      "displayName": "提升抽象层次",
+      "displayName": "zoom-out",
       "description": "提升抽象层次，快速获取陌生代码模块的全局地图与调用关系"
     },
     {
       "name": "trello",
       "source": "./plugins/trello",
-      "displayName": "管理 Trello 看板、列表和卡片",
+      "displayName": "trello",
       "description": "管理 Trello 看板、列表和卡片"
     },
     {
@@ -566,7 +566,7 @@
     {
       "name": "gmail",
       "source": "./plugins/gmail",
-      "displayName": "通过 Gmail API 收发邮件、管理标签和草稿",
+      "displayName": "Gmail",
       "description": "通过 Gmail API 收发邮件、管理标签和草稿"
     },
     {
@@ -584,7 +584,7 @@
     {
       "name": "cangjie-skill",
       "source": "./plugins/cangjie-skill",
-      "displayName": "把书蒸馏成可执行的技能",
+      "displayName": "book2skill",
       "description": "把书蒸馏成可执行的技能（拆书、方法论提取）"
     },
     {
@@ -650,7 +650,7 @@
     {
       "name": "notebooklm-studio",
       "source": "./plugins/notebooklm-studio",
-      "displayName": "NotebookLM 学习工作室",
+      "displayName": "NotebookLM Studio",
       "description": "NotebookLM 学习工作室：导入多种来源，生成播客、测验、抽认卡、思维导图等学习产物"
     },
     {
@@ -662,19 +662,19 @@
     {
       "name": "education",
       "source": "./plugins/education",
-      "displayName": "学习助手",
+      "displayName": "Education",
       "description": "学习助手：生成学习计划、测验、抽认卡、复习材料并跟踪进度"
     },
     {
       "name": "open-lesson",
       "source": "./plugins/open-lesson",
-      "displayName": "苏格拉底式 AI 辅导",
+      "displayName": "openLesson",
       "description": "苏格拉底式 AI 辅导：生成学习计划、音频对话式教学、诊断推理差距"
     },
     {
       "name": "tutor-skills",
       "source": "./plugins/tutor-skills",
-      "displayName": "将文档/代码转为 Obsidian 学习库",
+      "displayName": "tutor-skills",
       "description": "将文档/代码转为 Obsidian 学习库，自动出题、测验并跟踪掌握度"
     },
     {
@@ -728,7 +728,7 @@
     {
       "name": "imsg",
       "source": "./plugins/imsg",
-      "displayName": "iMessage/短信收发与历史查看",
+      "displayName": "iMessage",
       "description": "iMessage/短信收发与历史查看"
     },
     {
@@ -740,7 +740,7 @@
     {
       "name": "wacli",
       "source": "./plugins/wacli",
-      "displayName": "发送 WhatsApp 消息和同步历史",
+      "displayName": "WhatsApp",
       "description": "发送 WhatsApp 消息和同步历史"
     },
     {
@@ -824,13 +824,13 @@
     {
       "name": "deep-research",
       "source": "./plugins/deep-research",
-      "displayName": "结构化深度调研工作流",
+      "displayName": "Deep Research",
       "description": "结构化深度调研工作流，支持大纲生成、并行搜索、报告输出"
     },
     {
       "name": "admapix",
       "source": "./plugins/admapix",
-      "displayName": "广告素材搜索、竞品分析、应用排行与市场洞察",
+      "displayName": "AdMapix",
       "description": "广告素材搜索、竞品分析、应用排行与市场洞察"
     },
     {
@@ -848,7 +848,7 @@
     {
       "name": "github",
       "source": "./plugins/github",
-      "displayName": "管理 GitHub Issues、PR 和 CI",
+      "displayName": "github",
       "description": "管理 GitHub Issues、PR 和 CI"
     },
     {
@@ -860,7 +860,7 @@
     {
       "name": "api-gateway",
       "source": "./plugins/api-gateway",
-      "displayName": "连接 100+ API 服务",
+      "displayName": "API Gateway",
       "description": "连接 100+ API 服务（Google、Microsoft、GitHub 等），通过 OAuth 管理授权"
     },
     {
@@ -932,7 +932,7 @@
     {
       "name": "tmux",
       "source": "./plugins/tmux",
-      "displayName": "远程控制 tmux 交互式终端会话",
+      "displayName": "tmux",
       "description": "远程控制 tmux 交互式终端会话"
     },
     {
@@ -944,7 +944,7 @@
     {
       "name": "cli-anything-hub",
       "source": "./plugins/cli-anything-hub",
-      "displayName": "发现并安装面向 AI 智能体的 CLI 工具市场",
+      "displayName": "cli-anything-hub",
       "description": "发现并安装面向 AI 智能体的 CLI 工具市场（创意、生产力、AI 平台等）"
     },
     {
@@ -1028,91 +1028,91 @@
     {
       "name": "stealth-browser",
       "source": "./plugins/stealth-browser",
-      "displayName": "四层反检测浏览器自动化",
+      "displayName": "Stealth Browser",
       "description": "四层反检测浏览器自动化，支持隐身登录与验证码绕过"
     },
     {
       "name": "agent-browser-core",
       "source": "./plugins/agent-browser-core",
-      "displayName": "Agent Browser 网页自动化",
+      "displayName": "Agent Browser Core",
       "description": "基于 agent-browser CLI 的 AI 友好型网页自动化"
     },
     {
       "name": "playwright-browser-automation",
       "source": "./plugins/playwright-browser-automation",
-      "displayName": "直接调用 Playwright API 实现浏览器自动化",
+      "displayName": "Playwright Browser Automation",
       "description": "直接调用 Playwright API 实现浏览器自动化（无需 MCP）"
     },
     {
       "name": "stagehand-browser-cli",
       "source": "./plugins/stagehand-browser-cli",
-      "displayName": "Stagehand CLI 自然语言浏览器自动化",
+      "displayName": "Stagehand Browser CLI",
       "description": "Stagehand CLI 自然语言浏览器自动化（支持本地/云端）"
     },
     {
       "name": "playwright-scraper-skill",
       "source": "./plugins/playwright-scraper-skill",
-      "displayName": "Playwright 隐身网页抓取",
+      "displayName": "Playwright Scraper",
       "description": "Playwright 隐身网页抓取，支持反爬绕过与验证码处理"
     },
     {
       "name": "porteden-email",
       "source": "./plugins/porteden-email",
-      "displayName": "安全邮件管理",
+      "displayName": "PortEden Email",
       "description": "安全邮件管理，支持 Gmail/Outlook/Exchange 多账户"
     },
     {
       "name": "smooth-browser",
       "source": "./plugins/smooth-browser",
-      "displayName": "Smooth.sh 云端 AI 浏览器代理",
+      "displayName": "Smooth Browser",
       "description": "Smooth.sh 云端 AI 浏览器代理，自然语言驱动网页操作"
     },
     {
       "name": "clawbrowser",
       "source": "./plugins/clawbrowser",
-      "displayName": "通过 Playwright CLI 驱动浏览器",
+      "displayName": "ClawBrowser",
       "description": "通过 Playwright CLI 驱动浏览器（快照、表单、会话管理）"
     },
     {
       "name": "browser-cash",
       "source": "./plugins/browser-cash",
-      "displayName": "Browser.cash 云端反封锁浏览器会话",
+      "displayName": "Browser.cash",
       "description": "Browser.cash 云端反封锁浏览器会话（绕过 Cloudflare 等）"
     },
     {
       "name": "web-scraper",
       "source": "./plugins/web-scraper",
-      "displayName": "多策略五阶段网页抓取管道",
+      "displayName": "Web Scraper",
       "description": "多策略五阶段网页抓取管道（HTTP/解析/渲染/清洗/LLM提取）"
     },
     {
       "name": "browser",
       "source": "./plugins/browser",
-      "displayName": "Puppeteer 无头浏览器",
+      "displayName": "Browser (Puppeteer)",
       "description": "Puppeteer 无头浏览器，渲染 JS 页面并提取纯文本"
     },
     {
       "name": "browserwing",
       "source": "./plugins/browserwing",
-      "displayName": "BrowserWing HTTP API 浏览器自动化",
+      "displayName": "BrowserWing",
       "description": "BrowserWing HTTP API 浏览器自动化（导航、交互、数据提取）"
     },
     {
       "name": "infographic-maker",
       "source": "./plugins/infographic-maker",
-      "displayName": "手绘信息图生成器",
+      "displayName": "Infographic Maker",
       "description": "把文章、概念和数据提炼成手绘卡通信息图"
     },
     {
       "name": "excalidraw-diagram",
       "source": "./plugins/excalidraw-diagram",
-      "displayName": "Excalidraw 图解生成",
+      "displayName": "Excalidraw Diagram",
       "description": "Excalidraw 图解生成与渲染校验"
     },
     {
       "name": "deck-generator",
       "source": "./plugins/deck-generator",
-      "displayName": "AI 驱动的演示文稿生成",
+      "displayName": "deck-generator",
       "description": "AI 驱动的演示文稿生成，统一视觉风格的幻灯片"
     },
     {
@@ -1130,19 +1130,19 @@
     {
       "name": "content-ops",
       "source": "./plugins/content-ops",
-      "displayName": "内容质量评分与专家评审面板",
+      "displayName": "content-ops",
       "description": "内容质量评分与专家评审面板，递归迭代至 90+ 分"
     },
     {
       "name": "autoresearch",
       "source": "./plugins/autoresearch",
-      "displayName": "Karpathy 风格内容优化",
+      "displayName": "autoresearch",
       "description": "Karpathy 风格内容优化，50+ 变体 + 专家评分 + 进化迭代"
     },
     {
       "name": "podcast-ops",
       "source": "./plugins/podcast-ops",
-      "displayName": "播客内容拆解流水线",
+      "displayName": "podcast-ops",
       "description": "播客内容拆解流水线，一期节目生成 20+ 跨平台内容"
     },
     {
@@ -1154,7 +1154,7 @@
     {
       "name": "skill-vetter",
       "source": "./plugins/skill-vetter",
-      "displayName": "安装前审查技能的安全性",
+      "displayName": "skill-vetter",
       "description": "安装前审查技能的安全性"
     },
     {
@@ -1178,13 +1178,13 @@
     {
       "name": "agent-team-orchestration",
       "source": "./plugins/agent-team-orchestration",
-      "displayName": "多智能体团队编排",
+      "displayName": "Agent Team Orchestration",
       "description": "多智能体团队编排：角色定义、任务流转、交接协议与质量门禁"
     },
     {
       "name": "capability-evolver",
       "source": "./plugins/capability-evolver",
-      "displayName": "AI Agent 自演化引擎",
+      "displayName": "capability-evolver",
       "description": "AI Agent 自演化引擎，分析运行历史并自动优化能力"
     },
     {
@@ -1202,7 +1202,7 @@
     {
       "name": "llm-wiki",
       "source": "./plugins/llm-wiki",
-      "displayName": "用 LLM 增量构建和维护个人知识库 Wiki",
+      "displayName": "Karpathy LLM Wiki",
       "description": "用 LLM 增量构建和维护个人知识库 Wiki"
     },
     {
@@ -1220,67 +1220,67 @@
     {
       "name": "seo-ops",
       "source": "./plugins/seo-ops",
-      "displayName": "SEO 运营自动化",
+      "displayName": "seo-ops",
       "description": "SEO 运营自动化，内容攻击简报、GSC 优化与趋势侦察"
     },
     {
       "name": "growth-engine",
       "source": "./plugins/growth-engine",
-      "displayName": "自主营销实验引擎",
+      "displayName": "growth-engine",
       "description": "自主营销实验引擎，自动运行、度量与优化增长实验"
     },
     {
       "name": "conversion-ops",
       "source": "./plugins/conversion-ops",
-      "displayName": "CRO 审计与落地页转化优化",
+      "displayName": "conversion-ops",
       "description": "CRO 审计与落地页转化优化，调查问卷转化为引流磁铁"
     },
     {
       "name": "outbound-engine",
       "source": "./plugins/outbound-engine",
-      "displayName": "自动化外拓邮件引擎",
+      "displayName": "outbound-engine",
       "description": "自动化外拓邮件引擎，从 ICP 定义到邮件入站全流程"
     },
     {
       "name": "sales-pipeline",
       "source": "./plugins/sales-pipeline",
-      "displayName": "销售管道自动化",
+      "displayName": "sales-pipeline",
       "description": "销售管道自动化，匿名访客转化、沉睡交易激活与 ICP 学习"
     },
     {
       "name": "sales-playbook",
       "source": "./plugins/sales-playbook",
-      "displayName": "基于价值的定价与销售剧本",
+      "displayName": "sales-playbook",
       "description": "基于价值的定价与销售剧本，通话分析与报价打包"
     },
     {
       "name": "revenue-intelligence",
       "source": "./plugins/revenue-intelligence",
-      "displayName": "收入归因分析",
+      "displayName": "revenue-intelligence",
       "description": "收入归因分析，销售通话洞察与客户报告自动生成"
     },
     {
       "name": "finance-ops",
       "source": "./plugins/finance-ops",
-      "displayName": "AI CFO 助手",
+      "displayName": "finance-ops",
       "description": "AI CFO 助手，财务简报、成本分析与场景建模"
     },
     {
       "name": "team-ops",
       "source": "./plugins/team-ops",
-      "displayName": "团队绩效审计与会议行动项提取",
+      "displayName": "team-ops",
       "description": "团队绩效审计与会议行动项提取，识别 A/B/C 员工"
     },
     {
       "name": "x-longform-post",
       "source": "./plugins/x-longform-post",
-      "displayName": "撰写 X",
+      "displayName": "x-longform-post",
       "description": "撰写 X(Twitter) 长文，创始人语气 + AI 去味检测"
     },
     {
       "name": "yt-competitive-analysis",
       "source": "./plugins/yt-competitive-analysis",
-      "displayName": "YouTube 竞品分析",
+      "displayName": "yt-competitive-analysis",
       "description": "YouTube 竞品分析，发现爆款视频与标题包装规律"
     },
     {
@@ -1328,61 +1328,61 @@
     {
       "name": "12306",
       "source": "./plugins/12306",
-      "displayName": "查询 12306 国内列车时刻、余票与站点信息",
+      "displayName": "12306",
       "description": "查询 12306 国内列车时刻、余票与站点信息"
     },
     {
       "name": "flyai",
       "source": "./plugins/flyai",
-      "displayName": "基于飞猪 MCP",
+      "displayName": "flyai",
       "description": "基于飞猪 MCP，自然语言搜索机票、酒店、景点、演唱会，支持一站式预订"
     },
     {
       "name": "travel-cn",
       "source": "./plugins/travel-cn",
-      "displayName": "聚合去哪儿、携程、飞猪",
+      "displayName": "travel-cn",
       "description": "聚合去哪儿、携程、飞猪，查机票、酒店、火车票、景点门票"
     },
     {
       "name": "flights-search",
       "source": "./plugins/flights-search",
-      "displayName": "通过 Google Flights 搜索航班",
+      "displayName": "flights-search",
       "description": "通过 Google Flights 搜索航班，支持城市名、舱位筛选和预订链接"
     },
     {
       "name": "airbnb",
       "source": "./plugins/airbnb",
-      "displayName": "Airbnb 房源搜索",
+      "displayName": "airbnb",
       "description": "搜索 Airbnb 房源，含价格、评分和预订链接，无需 API Key"
     },
     {
       "name": "travel-planning",
       "source": "./plugins/travel-planning",
-      "displayName": "行程规划",
+      "displayName": "travel-planning",
       "description": "行程规划：多城市路线、预算优化、打包清单、签证时间表"
     },
     {
       "name": "globepilot-ai-agent-2",
       "source": "./plugins/globepilot-ai-agent-2",
-      "displayName": "出境游全能助手",
+      "displayName": "globepilot-ai-agent-2",
       "description": "出境游全能助手：签证查询、货币换算、机场状态、当地活动、文化贴士，无需 API Key"
     },
     {
       "name": "flight-tracker",
       "source": "./plugins/flight-tracker",
-      "displayName": "实时航班追踪",
+      "displayName": "flight-tracker",
       "description": "实时航班追踪，支持按地区、呼号、机场查询航班动态与时刻"
     },
     {
       "name": "aviationstack-flight-tracker",
       "source": "./plugins/aviationstack-flight-tracker",
-      "displayName": "实时航班追踪",
+      "displayName": "aviationstack-flight-tracker",
       "description": "实时航班追踪：登机口、延误、飞行位置，类 Flighty 体验（需 API Key）"
     },
     {
       "name": "aviation-weather",
       "source": "./plugins/aviation-weather",
-      "displayName": "获取 METAR/TAF 航空气象数据",
+      "displayName": "aviation-weather",
       "description": "获取 METAR/TAF 航空气象数据，飞行前天气简报，无需 API Key"
     },
     {
@@ -1394,19 +1394,19 @@
     {
       "name": "stock-analysis",
       "source": "./plugins/stock-analysis",
-      "displayName": "股票与加密货币分析",
+      "displayName": "Stock Analysis",
       "description": "股票与加密货币分析（8维评分、组合管理、趋势扫描、传闻探测）"
     },
     {
       "name": "us-stock-analysis",
       "source": "./plugins/us-stock-analysis",
-      "displayName": "美股综合分析",
+      "displayName": "US Stock Analysis",
       "description": "美股综合分析（基本面、技术面、估值、对比报告）"
     },
     {
       "name": "markitdown-skill",
       "source": "./plugins/markitdown-skill",
-      "displayName": "文档转 Markdown",
+      "displayName": "MarkItDown",
       "description": "文档转 Markdown(PDF/Word/PPT/图片OCR/音频转写/网页)"
     },
     {
@@ -1448,7 +1448,7 @@
     {
       "name": "shopify-admin-api",
       "source": "./plugins/shopify-admin-api",
-      "displayName": "Shopify Admin REST API 完整封装",
+      "displayName": "Shopify Admin API",
       "description": "Shopify Admin REST API 完整封装：订单、商品、库存、客户全管理"
     },
     {
@@ -1460,7 +1460,7 @@
     {
       "name": "tavily",
       "source": "./plugins/tavily",
-      "displayName": "AI优化的网络搜索引擎",
+      "displayName": "Tavily AI Search",
       "description": "AI优化的网络搜索引擎，支持智能摘要、领域过滤和深度研究"
     },
     {
@@ -1478,7 +1478,7 @@
     {
       "name": "legal-logic-analysis",
       "source": "./plugins/legal-logic-analysis",
-      "displayName": "系统化法律推理分析",
+      "displayName": "Legal Logic Analysis",
       "description": "系统化法律推理分析（管辖权、事实、争点、适用法律、风险评估）"
     },
     {
@@ -1502,7 +1502,7 @@
     {
       "name": "westock-data",
       "source": "./plugins/westock-data",
-      "displayName": "A股/港股/美股行情数据查询",
+      "displayName": "WeStock Data",
       "description": "A股/港股/美股行情数据查询（K线、财报、资金流、技术指标、板块排行）"
     },
     {
@@ -1520,97 +1520,97 @@
     {
       "name": "edgeone",
       "source": "./plugins/edgeone",
-      "displayName": "EdgeOne HTML 发布",
+      "displayName": "EdgeOne HTML Deploy",
       "description": "将 HTML 内容一键发布到 EdgeOne Pages 公网链接"
     },
     {
       "name": "html-deploy",
       "source": "./plugins/html-deploy",
-      "displayName": "将单文件 HTML 快速发布为可分享公网链接",
+      "displayName": "HTML Deploy",
       "description": "将单文件 HTML 快速发布为可分享公网链接"
     },
     {
       "name": "shippage",
       "source": "./plugins/shippage",
-      "displayName": "将 HTML 或 Markdown 快速发布为公网网页",
+      "displayName": "ShipPage",
       "description": "将 HTML 或 Markdown 快速发布为公网网页"
     },
     {
       "name": "edgeone-pages-deploy",
       "source": "./plugins/edgeone-pages-deploy",
-      "displayName": "将前端或全栈项目部署到腾讯 EdgeOne Pages",
+      "displayName": "EdgeOne Pages Deploy",
       "description": "将前端或全栈项目部署到腾讯 EdgeOne Pages"
     },
     {
       "name": "web-deploy-github",
       "source": "./plugins/web-deploy-github",
-      "displayName": "创建并部署单页静态网站到 GitHub Pages",
+      "displayName": "Web Deploy GitHub Pages",
       "description": "创建并部署单页静态网站到 GitHub Pages"
     },
     {
       "name": "vercel-deploy",
       "source": "./plugins/vercel-deploy",
-      "displayName": "部署和管理 Vercel 项目、环境变量与日志",
+      "displayName": "Vercel Deploy",
       "description": "部署和管理 Vercel 项目、环境变量与日志"
     },
     {
       "name": "netlify-deploy",
       "source": "./plugins/netlify-deploy",
-      "displayName": "使用 Netlify CLI 部署和管理静态网站",
+      "displayName": "Netlify Deploy",
       "description": "使用 Netlify CLI 部署和管理静态网站"
     },
     {
       "name": "web-deploy",
       "source": "./plugins/web-deploy",
-      "displayName": "Web 通用部署指南",
+      "displayName": "Web Deploy",
       "description": "跨 Vercel、Railway、GitHub Pages 的通用 Web 部署指南"
     },
     {
       "name": "static-app",
       "source": "./plugins/static-app",
-      "displayName": "将静态网站或前端构建产物部署到 Static.app",
+      "displayName": "Static App",
       "description": "将静态网站或前端构建产物部署到 Static.app"
     },
     {
       "name": "github-pages-auto-deploy",
       "source": "./plugins/github-pages-auto-deploy",
-      "displayName": "配置 GitHub Pages 自动部署和自定义域名支持",
+      "displayName": "GitHub Pages Auto Deploy",
       "description": "配置 GitHub Pages 自动部署和自定义域名支持"
     },
     {
       "name": "cloudflare",
       "source": "./plugins/cloudflare",
-      "displayName": "Cloudflare 平台开发与部署指南",
+      "displayName": "Cloudflare",
       "description": "Cloudflare 平台开发与部署指南，覆盖 Workers、Pages、存储、AI 与安全"
     },
     {
       "name": "cloudflare-worker-builder",
       "source": "./plugins/cloudflare-worker-builder",
-      "displayName": "脚手架并部署 Cloudflare Worker 全栈应用",
+      "displayName": "Cloudflare Worker Builder",
       "description": "脚手架并部署 Cloudflare Worker 全栈应用"
     },
     {
       "name": "landing-page-generator",
       "source": "./plugins/landing-page-generator",
-      "displayName": "生成可直接部署的单页营销落地页",
+      "displayName": "Landing Page Generator",
       "description": "生成可直接部署的单页营销落地页"
     },
     {
       "name": "web-performance-audit",
       "source": "./plugins/web-performance-audit",
-      "displayName": "部署后网站性能审计",
+      "displayName": "Web Performance Audit",
       "description": "部署后网站性能审计，检查核心指标与加载瓶颈"
     },
     {
       "name": "responsiveness-check",
       "source": "./plugins/responsiveness-check",
-      "displayName": "多视口响应式检查",
+      "displayName": "Responsiveness Check",
       "description": "多视口响应式检查，定位页面布局断点问题"
     },
     {
       "name": "product-showcase-site",
       "source": "./plugins/product-showcase-site",
-      "displayName": "为已有应用生成可部署的多页产品展示站",
+      "displayName": "Product Showcase Site",
       "description": "为已有应用生成可部署的多页产品展示站"
     }
   ]

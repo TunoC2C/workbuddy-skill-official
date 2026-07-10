@@ -1,6 +1,6 @@
 {
   "name": "vercel-deploy",
-  "displayName": "部署和管理 Vercel 项目、环境变量与日志",
+  "displayName": "Vercel Deploy",
   "description": "部署和管理 Vercel 项目、环境变量与日志",
   "author": {
     "name": "CodeBuddy"

@@ -1,6 +1,6 @@
 {
   "name": "airbnb",
-  "displayName": "Airbnb 房源搜索",
+  "displayName": "airbnb",
   "description": "搜索 Airbnb 房源，含价格、评分和预订链接，无需 API Key",
   "author": {
     "name": "CodeBuddy"

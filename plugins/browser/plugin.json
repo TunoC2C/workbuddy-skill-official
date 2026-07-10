@@ -1,6 +1,6 @@
 {
   "name": "browser",
-  "displayName": "Puppeteer 无头浏览器",
+  "displayName": "Browser (Puppeteer)",
   "description": "Puppeteer 无头浏览器，渲染 JS 页面并提取纯文本",
   "author": {
     "name": "CodeBuddy"

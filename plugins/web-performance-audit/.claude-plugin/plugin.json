@@ -1,6 +1,6 @@
 {
   "name": "web-performance-audit",
-  "displayName": "部署后网站性能审计",
+  "displayName": "Web Performance Audit",
   "description": "部署后网站性能审计，检查核心指标与加载瓶颈",
   "author": {
     "name": "CodeBuddy"

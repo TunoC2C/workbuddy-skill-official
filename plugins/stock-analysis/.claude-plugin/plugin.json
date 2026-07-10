@@ -1,6 +1,6 @@
 {
   "name": "stock-analysis",
-  "displayName": "股票与加密货币分析",
+  "displayName": "Stock Analysis",
   "description": "股票与加密货币分析（8维评分、组合管理、趋势扫描、传闻探测）",
   "author": {
     "name": "CodeBuddy"

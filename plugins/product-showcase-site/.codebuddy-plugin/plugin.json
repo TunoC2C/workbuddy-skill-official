@@ -1,6 +1,6 @@
 {
   "name": "product-showcase-site",
-  "displayName": "为已有应用生成可部署的多页产品展示站",
+  "displayName": "Product Showcase Site",
   "description": "为已有应用生成可部署的多页产品展示站",
   "author": {
     "name": "CodeBuddy"

@@ -1,6 +1,6 @@
 {
   "name": "web-deploy",
-  "displayName": "Web 通用部署指南",
+  "displayName": "Web Deploy",
   "description": "跨 Vercel、Railway、GitHub Pages 的通用 Web 部署指南",
   "author": {
     "name": "CodeBuddy"

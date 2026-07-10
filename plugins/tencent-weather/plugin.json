@@ -1,6 +1,6 @@
 {
   "name": "tencent-weather",
-  "displayName": "中国各地实时天气和天气预报信息查询",
+  "displayName": "tencent-weather",
   "description": "中国各地实时天气和天气预报信息查询，覆盖市级和区县级行政区",
   "author": {
     "name": "CodeBuddy"

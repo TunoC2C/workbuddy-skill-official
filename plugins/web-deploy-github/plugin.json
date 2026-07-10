@@ -1,6 +1,6 @@
 {
   "name": "web-deploy-github",
-  "displayName": "创建并部署单页静态网站到 GitHub Pages",
+  "displayName": "Web Deploy GitHub Pages",
   "description": "创建并部署单页静态网站到 GitHub Pages",
   "author": {
     "name": "CodeBuddy"

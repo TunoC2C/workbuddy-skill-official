@@ -1,6 +1,6 @@
 {
   "name": "cloudflare",
-  "displayName": "Cloudflare 平台开发与部署指南",
+  "displayName": "Cloudflare",
   "description": "Cloudflare 平台开发与部署指南，覆盖 Workers、Pages、存储、AI 与安全",
   "author": {
     "name": "CodeBuddy"

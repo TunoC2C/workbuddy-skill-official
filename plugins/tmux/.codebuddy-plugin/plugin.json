@@ -1,6 +1,6 @@
 {
   "name": "tmux",
-  "displayName": "远程控制 tmux 交互式终端会话",
+  "displayName": "tmux",
   "description": "远程控制 tmux 交互式终端会话",
   "author": {
     "name": "CodeBuddy"
