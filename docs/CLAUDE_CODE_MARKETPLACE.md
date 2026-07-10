@@ -45,5 +45,5 @@ node scripts/generate-claude-marketplace.mjs --check
 
 ```text
 /plugin marketplace add D:\Programmer\code\yep\workbuddy-skill-official
-/plugin install airbnb@codebuddy-skills-official
+/plugin install airbnb@workbuddy-skills-official
 ```

@@ -11,6 +11,7 @@ const checkOnly = args.has("--check");
 const sourceMarketplacePath = ".codebuddy-skill/marketplace.json";
 const claudeMarketplacePath = ".claude-plugin/marketplace.json";
 const codebuddyPluginMarketplacePath = ".codebuddy-plugin/marketplace.json";
+const marketplaceName = "workbuddy-skills-official";
 
 function repoPath(...segments) {
   return path.join(repoRoot, ...segments);
@@ -119,7 +120,8 @@ function buildPluginManifest(skill) {
 function buildMarketplace(sourceMarketplace, plugins) {
   const ownerName = sourceMarketplace.owner?.name || "CodeBuddy";
   return {
-    name: sourceMarketplace.name || "codebuddy-skills-official",
+    // Claude 安装命令使用该市场名；这里不沿用旧 CodeBuddy skill 市场名。
+    name: marketplaceName,
     description: `${sourceMarketplace.description || "CodeBuddy 官方技能市场"}，适配 Claude Code 插件市场。`,
     owner: {
       name: ownerName,

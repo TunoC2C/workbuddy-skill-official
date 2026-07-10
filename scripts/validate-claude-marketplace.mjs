@@ -8,6 +8,7 @@ const repoRoot = process.cwd();
 const sourceMarketplacePath = ".codebuddy-skill/marketplace.json";
 const claudeMarketplacePath = ".claude-plugin/marketplace.json";
 const codebuddyPluginMarketplacePath = ".codebuddy-plugin/marketplace.json";
+const expectedMarketplaceName = "workbuddy-skills-official";
 
 function repoPath(...segments) {
   return path.join(repoRoot, ...segments);
@@ -141,6 +142,7 @@ function validateMarketplaceFile(issues, relativePath, sourceSkills) {
   }
 
   const marketplace = readJson(relativePath);
+  assertEqual(issues, `${relativePath}.name`, marketplace.name, expectedMarketplaceName);
   assertEqual(issues, `${relativePath}.plugins.length`, marketplace.plugins?.length, sourceSkills.length);
 
   const pluginEntries = indexByName(Array.isArray(marketplace.plugins) ? marketplace.plugins : []);
