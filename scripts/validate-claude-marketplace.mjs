@@ -99,6 +99,40 @@ function expectedPluginManifest(skill) {
   return manifest;
 }
 
+function normalizedIdentity(value) {
+  return typeof value === "string" ? value.trim().toLowerCase() : "";
+}
+
+function describeSkill(skill) {
+  return skill.source || skill.name || "<unknown>";
+}
+
+function describePlugin(plugin) {
+  return plugin.source || plugin.name || plugin.displayName || "<unknown>";
+}
+
+function validateUniqueIdentity(issues, label, items, keyFn, describeFn) {
+  const seen = new Map();
+
+  for (const item of items) {
+    const value = normalizedIdentity(keyFn(item));
+    if (!value) {
+      continue;
+    }
+
+    if (!seen.has(value)) {
+      seen.set(value, []);
+    }
+    seen.get(value).push(describeFn(item));
+  }
+
+  for (const [value, matches] of seen) {
+    if (matches.length > 1) {
+      issues.push(`duplicate ${label}: ${value} (${matches.join(", ")})`);
+    }
+  }
+}
+
 function indexByName(items) {
   const result = new Map();
   for (const item of items) {
@@ -145,7 +179,17 @@ function validateMarketplaceFile(issues, relativePath, sourceSkills) {
   assertEqual(issues, `${relativePath}.name`, marketplace.name, expectedMarketplaceName);
   assertEqual(issues, `${relativePath}.plugins.length`, marketplace.plugins?.length, sourceSkills.length);
 
-  const pluginEntries = indexByName(Array.isArray(marketplace.plugins) ? marketplace.plugins : []);
+  const plugins = Array.isArray(marketplace.plugins) ? marketplace.plugins : [];
+  validateUniqueIdentity(issues, `${relativePath} plugin name`, plugins, (plugin) => plugin.name, describePlugin);
+  validateUniqueIdentity(
+    issues,
+    `${relativePath} plugin displayName`,
+    plugins,
+    (plugin) => plugin.displayName,
+    describePlugin,
+  );
+
+  const pluginEntries = indexByName(plugins);
   for (const skill of sourceSkills) {
     // 逐个比对 source/name/copy 文案，确保 Claude 安装 ID 不会被中文名污染。
     const expected = expectedPluginEntry(skill);
@@ -190,6 +234,8 @@ function main() {
   const issues = [];
 
   assertEqual(issues, `${sourceMarketplacePath}.skills.length`, sourceSkills.length > 0, true);
+  validateUniqueIdentity(issues, "source plugin name", sourceSkills, (skill) => skill.source, describeSkill);
+  validateUniqueIdentity(issues, "source plugin displayName", sourceSkills, (skill) => skill.name, describeSkill);
   validateMarketplaceFile(issues, claudeMarketplacePath, sourceSkills);
   validateMarketplaceFile(issues, codebuddyPluginMarketplacePath, sourceSkills);
   validatePluginDirectories(issues, sourceSkills);

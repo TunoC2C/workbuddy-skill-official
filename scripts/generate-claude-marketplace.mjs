@@ -77,6 +77,36 @@ function pluginKeywords(skill) {
   return [...new Set(values)];
 }
 
+function normalizedIdentity(value) {
+  return typeof value === "string" ? value.trim().toLowerCase() : "";
+}
+
+function describeSkill(skill) {
+  return skill.source || skill.name || "<unknown>";
+}
+
+function validateUniqueIdentity(issues, label, items, keyFn, describeFn) {
+  const seen = new Map();
+
+  for (const item of items) {
+    const value = normalizedIdentity(keyFn(item));
+    if (!value) {
+      continue;
+    }
+
+    if (!seen.has(value)) {
+      seen.set(value, []);
+    }
+    seen.get(value).push(describeFn(item));
+  }
+
+  for (const [value, matches] of seen) {
+    if (matches.length > 1) {
+      issues.push(`duplicate ${label}: ${value} (${matches.join(", ")})`);
+    }
+  }
+}
+
 function buildPluginEntry(skill) {
   return {
     name: skill.source,
@@ -191,17 +221,16 @@ function mirrorSkillDirectory(sourceDir, targetDir) {
 
 function validateSourceSkills(sourceSkills) {
   const issues = [];
-  const seen = new Set();
+
+  // Generated plugin manifests use source as name and marketplace name as displayName.
+  validateUniqueIdentity(issues, "plugin name", sourceSkills, (skill) => skill.source, describeSkill);
+  validateUniqueIdentity(issues, "plugin displayName", sourceSkills, (skill) => skill.name, describeSkill);
 
   for (const skill of sourceSkills) {
     if (!skill.source || typeof skill.source !== "string") {
       issues.push(`skill ${JSON.stringify(skill.name)} missing source`);
       continue;
     }
-    if (seen.has(skill.source)) {
-      issues.push(`duplicate skill source: ${skill.source}`);
-    }
-    seen.add(skill.source);
 
     const skillFile = repoPath("skills", skill.source, "SKILL.md");
     if (!fs.existsSync(skillFile)) {
