@@ -1,0 +1,61 @@
+# =============================================================================
+# 每日健康报告 — 自愈反馈环的第 1 拍
+# -----------------------------------------------------------------------------
+# 每天 09:00 UTC 自动跑。查可观测后端,分析全服务错误模式,用模型生成
+# "执行级健康摘要",推送到团队频道。没人需要去要它。
+#
+# 工具可替换:可观测后端(CloudWatch/Prometheus)、通知渠道(Teams/Slack/飞书)
+# 都在脚本的 adapter 里隔离;模型 API 同理。
+# =============================================================================
+name: Daily Health Report
+
+on:
+  schedule:
+    - cron: '0 9 * * *'      # 每天 09:00 UTC
+  workflow_dispatch: {}       # 也可手动触发
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  health-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r scripts/requirements.txt
+      - name: Configure cloud credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.OBSERVABILITY_READ_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+      - name: Generate & send health summary (含 token 报告 + 周一 comprehension 报告)
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}     # 向后兼容旧仓
+          NOTIFY_WEBHOOK_URL: ${{ secrets.NOTIFY_WEBHOOK_URL }}   # Teams/Slack 入站 webhook
+          OBSERVABILITY_BACKEND: ${{ vars.OBSERVABILITY_BACKEND }} # cloudwatch | prometheus | mock
+          LOOKBACK_HOURS: '24'
+          # v2: 反认知投降护栏所需(comprehension_metrics.py 用)
+          GITHUB_TOKEN: ${{ secrets.GH_API_TOKEN }}               # 一个有 repo:read 的 PAT
+          GITHUB_REPO: ${{ github.repository }}
+          ARCHITECT_LOGIN: ${{ vars.ARCHITECT_LOGIN }}            # 架构师 GitHub 用户名
+          # v2: token 预算告警阈值
+          MONTHLY_TOKEN_BUDGET: ${{ vars.MONTHLY_TOKEN_BUDGET }}  # 例: 50000000
+        run: python scripts/health_report.py
+      - name: Commit state changes back (token-usage / triage-history append)
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain state/ 2>/dev/null)" ]; then
+            git config user.email "bot@harness.local"
+            git config user.name "harness-bot"
+            git add state/
+            git commit -m "chore(state): daily append" || true
+            git push || true
+          fi

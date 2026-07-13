@@ -12,6 +12,7 @@ const sourceMarketplacePath = ".codebuddy-skill/marketplace.json";
 const claudeMarketplacePath = ".claude-plugin/marketplace.json";
 const codebuddyPluginMarketplacePath = ".codebuddy-plugin/marketplace.json";
 const marketplaceName = "workbuddy-skills-official";
+const pluginSourceRepo = "TunoC2C/workbuddy-skill-official";
 
 function repoPath(...segments) {
   return path.join(repoRoot, ...segments);
@@ -110,7 +111,12 @@ function validateUniqueIdentity(issues, label, items, keyFn, describeFn) {
 function buildPluginEntry(skill) {
   return {
     name: skill.source,
-    source: `./plugins/${skill.source}`,
+    // 远程市场只保留清单；安装时按需拉取单个插件目录，避免首次添加市场时下载整个 plugins 目录。
+    source: {
+      source: "git-subdir",
+      url: pluginSourceRepo,
+      path: `plugins/${skill.source}`,
+    },
     displayName: preferredDisplayName(skill),
     description: preferredDescription(skill),
   };

@@ -9,6 +9,7 @@ const sourceMarketplacePath = ".codebuddy-skill/marketplace.json";
 const claudeMarketplacePath = ".claude-plugin/marketplace.json";
 const codebuddyPluginMarketplacePath = ".codebuddy-plugin/marketplace.json";
 const expectedMarketplaceName = "workbuddy-skills-official";
+const pluginSourceRepo = "TunoC2C/workbuddy-skill-official";
 
 function repoPath(...segments) {
   return path.join(repoRoot, ...segments);
@@ -40,7 +41,8 @@ function frontmatterField(skillSource, fieldName) {
 }
 
 function assertEqual(issues, label, actual, expected) {
-  if (actual !== expected) {
+  // marketplace source 已从字符串升级为对象，这里统一按 JSON 结构比较，避免对象引用误判。
+  if (JSON.stringify(actual) !== JSON.stringify(expected)) {
     issues.push(`${label}: expected ${JSON.stringify(expected)}, got ${JSON.stringify(actual)}`);
   }
 }
@@ -58,7 +60,12 @@ function preferredDisplayName(skill) {
 function expectedPluginEntry(skill) {
   return {
     name: skill.source,
-    source: `./plugins/${skill.source}`,
+    // 与生成脚本保持一致：市场清单轻量加载，具体插件在安装时按子目录拉取。
+    source: {
+      source: "git-subdir",
+      url: pluginSourceRepo,
+      path: `plugins/${skill.source}`,
+    },
     displayName: preferredDisplayName(skill),
     description: preferredDescription(skill),
   };
@@ -160,12 +167,7 @@ function compareManifest(issues, prefix, actual, expected) {
     assertEqual(issues, `${prefix}.version`, actual?.version, expected.version);
   }
   if (expected.keywords) {
-    assertEqual(
-      issues,
-      `${prefix}.keywords`,
-      JSON.stringify(actual?.keywords ?? []),
-      JSON.stringify(expected.keywords),
-    );
+    assertEqual(issues, `${prefix}.keywords`, actual?.keywords ?? [], expected.keywords);
   }
 }
 

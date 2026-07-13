@@ -1,0 +1,80 @@
+# =============================================================================
+# Triage 引擎 — 自愈反馈环的第 2 拍(健康报告一小时后)
+# -----------------------------------------------------------------------------
+# 每天 10:00 UTC 跑。聚类生产错误(可观测后端 + Sentry),九维打分,
+# 在工单层(Linear/Jira/GitHub Issues)自动建单——含样本日志、受影响用户、
+# 受影响端点、建议调查路径。去重:同模式更新已有 open 工单;closed 复现则重开。
+#
+# 另外提供 verify 子命令:部署后复检,原错误消失则自动关单。
+# 它由 deploy 流水线在 release 后调用(workflow_dispatch + inputs),形成闭环。
+# =============================================================================
+name: Triage Engine
+
+on:
+  schedule:
+    - cron: '0 10 * * *'     # 每天 10:00 UTC,健康报告之后
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'triage(聚类建单) | verify(部署后复检关单)'
+        required: true
+        default: 'triage'
+        type: choice
+        options: [triage, verify]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  triage:
+    if: github.event_name == 'schedule' || inputs.mode == 'triage'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r scripts/requirements.txt
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.OBSERVABILITY_READ_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+      - name: Cluster, score, and file tickets
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}     # 向后兼容旧仓
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: ${{ vars.SENTRY_ORG }}
+          SENTRY_PROJECT: ${{ vars.SENTRY_PROJECT }}
+          TRACKER: ${{ vars.TRACKER }}                 # linear | jira | github
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+          OBSERVABILITY_BACKEND: ${{ vars.OBSERVABILITY_BACKEND }}
+          LOOKBACK_HOURS: '24'
+        run: python scripts/triage_engine.py
+
+  verify:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'verify'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r scripts/requirements.txt
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.OBSERVABILITY_READ_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+      - name: Re-check resolved errors & auto-close tickets
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          TRACKER: ${{ vars.TRACKER }}
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+          OBSERVABILITY_BACKEND: ${{ vars.OBSERVABILITY_BACKEND }}
+          LOOKBACK_HOURS: '2'
+        run: python scripts/verify_triage.py

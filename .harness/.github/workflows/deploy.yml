@@ -1,0 +1,125 @@
+# =============================================================================
+# 六阶段部署流水线
+# -----------------------------------------------------------------------------
+# Verify CI → Build & Deploy Dev → Test Dev → Deploy Prod → Test Prod → Release
+#
+# 阶段 1(Verify CI)在 ci.yml 中,作为 PR 门禁。合并到 main 后,本流水线接管
+# 阶段 2~6。每阶段都带测试,prod 部署后启用熔断式自动回滚:指标恶化则自动回退。
+#
+# 工具可替换:部署目标这里用 AWS ECS 占位,可换 GKE / k8s / Cloud Run 等——
+#            只改 deploy / rollback 的 step,流水线骨架不变。
+# =============================================================================
+name: Deploy (6-phase)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-prod          # 串行化生产部署,避免并发互相覆盖
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  id-token: write             # OIDC 取云凭证,免长期密钥
+
+env:
+  IMAGE_TAG: ${{ github.sha }}
+
+jobs:
+  # 阶段 2 ---------------------------------------------------------------------
+  build-and-deploy-dev:
+    runs-on: ubuntu-latest
+    environment: dev
+    outputs:
+      image_tag: ${{ env.IMAGE_TAG }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Configure cloud credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+      - name: Build & push images
+        run: ./ops/build_and_push.sh "${{ env.IMAGE_TAG }}"
+      - name: Deploy to dev
+        run: ./ops/deploy.sh dev "${{ env.IMAGE_TAG }}"
+
+  # 阶段 3 ---------------------------------------------------------------------
+  test-dev:
+    needs: build-and-deploy-dev
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - uses: actions/checkout@v4
+      - name: Smoke + E2E against dev
+        run: ./ops/run_tests.sh dev
+      - name: Verify health endpoints
+        run: ./ops/healthcheck.sh dev
+
+  # 阶段 4 ---------------------------------------------------------------------
+  deploy-prod:
+    needs: test-dev
+    runs-on: ubuntu-latest
+    environment: production      # 在仓库 Environments 里给它配人工审批门(可选)
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure cloud credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+      - name: Deploy to prod (with circuit-breaker enabled)
+        # 部署底层启用熔断:若新任务无法稳定健康,服务自动回滚到上一稳定版
+        # 例如 ECS deployment circuit breaker:rollback=true
+        run: ./ops/deploy.sh prod "${{ env.IMAGE_TAG }}" --circuit-breaker
+
+  # 阶段 5 ---------------------------------------------------------------------
+  test-prod:
+    needs: deploy-prod
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - name: Post-deploy smoke tests
+        run: ./ops/run_tests.sh prod --smoke
+      - name: Watch key metrics for regression (5 min window)
+        # 部署后观察核心指标(错误率/延迟/转化)。恶化则非零退出 → 触发回滚 job
+        run: ./ops/watch_metrics.sh prod --window 300
+
+  # 阶段 5.5:熔断回滚 — 只在 test-prod 失败时运行 ----------------------------
+  rollback-prod:
+    needs: [deploy-prod, test-prod]
+    if: failure() && needs.deploy-prod.result == 'success'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+      - name: Auto rollback to last stable
+        run: ./ops/rollback.sh prod
+      - name: Notify team
+        run: ./ops/notify.sh "🚨 Prod 部署被自动回滚:${{ env.IMAGE_TAG }} 在 test-prod 阶段指标恶化。"
+
+  # 阶段 6 ---------------------------------------------------------------------
+  release:
+    needs: test-prod
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Tag release
+        run: |
+          TAG="rel-$(date +%Y.%m.%d)-${GITHUB_SHA::7}"
+          git tag "$TAG" && git push origin "$TAG"
+      - name: AI-generated release notes
+        # 从 changelog / 提交 / 合并的 PR 自动生成发布说明(见手册第 8 节:AI-native 外溢)
+        run: python scripts/gen_release_notes.py --since-last-tag > RELEASE_NOTES.md
+      - name: Publish notes
+        run: ./ops/notify.sh "$(cat RELEASE_NOTES.md)"

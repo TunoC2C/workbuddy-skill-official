@@ -1,0 +1,3 @@
+{"ts": "2026-07-13T09:18:33.337332+00:00", "loop": "daily-health", "role": "health-summarizer", "model": "claude-sonnet-4-6", "input_tokens": 0, "output_tokens": 0, "stub": true, "provider": "anthropic"}
+{"ts": "2026-07-13T09:18:33.498233+00:00", "loop": "daily-health", "role": "health-summarizer", "model": "gpt-4o-mini", "input_tokens": 0, "output_tokens": 0, "stub": true, "provider": "openai"}
+{"ts": "2026-07-13T09:18:33.662110+00:00", "loop": "daily-health", "role": "health-summarizer", "model": "deepseek-chat", "input_tokens": 0, "output_tokens": 0, "stub": true, "provider": "deepseek"}

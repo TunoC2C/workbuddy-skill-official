@@ -1,0 +1,120 @@
+# =============================================================================
+# 性能回归门禁(v2.3 可选)
+# -----------------------------------------------------------------------------
+# 每个 PR + main 推送都跑一遍 k6 → 与 state/perf-baseline.json 比对 →
+# p95 恶化 > 20% 或 error rate > 1% 则 BLOCK。
+#
+# 启用步骤:
+#   1) 把这个文件拷到 .github/workflows/
+#   2) 在 scripts/perf-scenarios/ 下放一个或多个 *.js(参考 example.js)
+#   3) 在 GitHub Repo Vars 设 PERF_TARGET_URL(被压的服务地址,例如 dev 环境)
+#   4) (可选)分支保护 → required check 加 perf-gate
+#
+# 把这个 workflow 设为 required 之前,先在 main 上跑一次让基线生成。
+# =============================================================================
+name: Perf Gate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]    # 在 main 上跑会更新基线
+
+permissions:
+  contents: write       # main 上需要 commit 更新后的 baseline 回仓
+  pull-requests: write
+
+concurrency:
+  group: perf-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      scenarios: ${{ steps.list.outputs.scenarios }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        # 列出所有 scripts/perf-scenarios/*.js,产出 JSON 数组喂给下游 matrix
+        run: |
+          if compgen -G "scripts/perf-scenarios/*.js" > /dev/null; then
+            arr=$(ls scripts/perf-scenarios/*.js | xargs -n1 basename | sed 's/\.js$//' | \
+                  python3 -c 'import sys,json; print(json.dumps([l.strip() for l in sys.stdin]))')
+          else
+            arr='[]'
+          fi
+          echo "scenarios=$arr" >> $GITHUB_OUTPUT
+          echo "找到 scenarios:$arr"
+
+  k6:
+    needs: discover
+    if: needs.discover.outputs.scenarios != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        scenario: ${{ fromJSON(needs.discover.outputs.scenarios) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install k6
+        run: |
+          curl -sL https://github.com/grafana/k6/releases/download/v0.50.0/k6-v0.50.0-linux-amd64.tar.gz \
+            | tar xz -C /tmp
+          sudo mv /tmp/k6-v0.50.0-linux-amd64/k6 /usr/local/bin/
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Run scenario ${{ matrix.scenario }}
+        env:
+          BASE_URL: ${{ vars.PERF_TARGET_URL }}
+        run: |
+          k6 run --summary-export=k6-summary.json scripts/perf-scenarios/${{ matrix.scenario }}.js
+      - name: Compare to baseline
+        env:
+          # 都可在 Repo Vars 覆盖
+          PERF_P95_REGRESSION_PCT: ${{ vars.PERF_P95_REGRESSION_PCT }}
+          PERF_ERROR_RATE_MAX: ${{ vars.PERF_ERROR_RATE_MAX }}
+        run: |
+          extra=""
+          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            extra="--update-baseline"
+          fi
+          python3 scripts/perf_check.py --scenario "${{ matrix.scenario }}" \
+              --summary k6-summary.json $extra | tee perf-report.md
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} \
+            --repo ${{ github.repository }} \
+            --body "$(cat perf-report.md)"
+      - name: Commit updated baseline (main only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          if ! git diff --quiet state/perf-baseline.json 2>/dev/null; then
+            git config user.email "perf-bot@harness.local"
+            git config user.name  "perf-bot"
+            git add state/perf-baseline.json
+            git commit -m "chore(perf): roll baseline (${{ matrix.scenario }})"
+            git push
+          fi
+
+  perf-gate:
+    needs: [discover, k6]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Aggregate result
+        run: |
+          # 没有 scenario(全新仓库)→ 视为通过,不挡 PR
+          if [ '${{ needs.discover.outputs.scenarios }}' = '[]' ]; then
+            echo "::warning::未找到 scripts/perf-scenarios/*.js,perf-gate 自动放行。"
+            exit 0
+          fi
+          # 任一 k6 job 失败 → 红
+          if [ '${{ needs.k6.result }}' = 'failure' ]; then
+            echo "::error::perf-gate 失败 — 见 PR 评论中的 perf-report。"
+            exit 1
+          fi
+          echo "✅ perf-gate green."

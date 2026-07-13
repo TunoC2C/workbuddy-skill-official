@@ -1,0 +1,11 @@
+# 自愈环脚本依赖。保持精简,adapter 隔离厂商 SDK。
+# v2.1: 两个 SDK 二选一即可——
+#   LLM_PROVIDER=anthropic        → 只需 anthropic
+#   其他(openai/deepseek/qwen/kimi/glm/baichuan/siliconflow/custom)→ 只需 openai
+# 不知道用哪个就两个都装,不冲突。
+requests>=2.31
+anthropic>=0.39          # LLM_PROVIDER=anthropic 时使用
+openai>=1.40             # 其他所有 OpenAI 兼容厂商共用此 SDK
+boto3>=1.34              # 仅当 OBSERVABILITY_BACKEND=cloudwatch 时需要
+pyyaml>=6.0              # tools/verify.sh 校验 GitHub workflow YAML
+tomli>=2.0; python_version < "3.11"   # agents/*.toml 解析(Python 3.11+ 用标准库 tomllib)

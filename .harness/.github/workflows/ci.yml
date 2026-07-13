@@ -1,0 +1,248 @@
+# =============================================================================
+# CI 门禁 (Verify CI) — 单体项目版 (single-service profile)
+# -----------------------------------------------------------------------------
+# 与多微服务版 ci.yml 的区别:代码在仓库根,不分 apps/ + services/ 子目录;
+#   Node 用单包命令(非 pnpm -r workspace);Go/Python 在仓库根执行,不带子目录路径。
+# 原则不变:每个 PR 必须过这道门,没有可选 job,没有人工绕过。
+#   docs-only PR 只跑 changes + ci-gate,不跑测试/构建/集成验证,避免浪费 CI。
+#
+# 适配:单语言或少数几种语言的单体。各语言 job 用 paths 过滤,只有相关变更才跑。
+# 工具可替换:GitHub Actions → GitLab CI / Azure DevOps;Playwright → Cypress 等。
+# =============================================================================
+name: CI (Verify)
+
+on:
+  push:
+    branches: [main]  # gate-branches
+  pull_request:
+    branches: [main]  # gate-branches
+  # 也允许在 merge queue 中触发(配合 GitHub Merge Queue / Graphite)
+  merge_group:
+
+# 同一 PR 新 push 自动取消旧运行,省 runner、出结果快
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # 检测哪些部分发生了变更,后续 job 据此决定是否运行(路径按根级布局)
+  # ---------------------------------------------------------------------------
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      docs: ${{ steps.filter.outputs.docs }}
+      non_docs: ${{ steps.filter.outputs.non_docs }}
+      node: ${{ steps.filter.outputs.node }}
+      go: ${{ steps.filter.outputs.go }}
+      python: ${{ steps.filter.outputs.python }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            docs:
+              - '*.md'
+              - '*.mdx'
+              - '**/*.md'
+              - '**/*.mdx'
+              - '.github/**/*.md'
+              - 'docs/**'
+              - 'handoffs/**'
+              - 'codex/**/*.md'
+              - 'codex/**/*.md.template'
+            non_docs:
+              - '**'
+              - '!*.md'
+              - '!*.mdx'
+              - '!**/*.md'
+              - '!**/*.mdx'
+              - '!.github/**/*.md'
+              - '!docs/**'
+              - '!handoffs/**'
+              - '!codex/**/*.md'
+              - '!codex/**/*.md.template'
+            node:
+              - '**/*.{ts,tsx,js,jsx}'
+              - 'package.json'
+              - 'pnpm-lock.yaml'
+            go:
+              - '**/*.go'
+              - 'go.mod'
+              - 'go.sum'
+            python:
+              - '**/*.py'
+              - 'pyproject.toml'
+              - 'requirements*.txt'
+
+  # ---------------------------------------------------------------------------
+  # TypeScript / Node:类型检查 + lint + 单测
+  # ---------------------------------------------------------------------------
+  node-quality:
+    needs: changes
+    if: needs.changes.outputs.node == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile
+      - name: Typecheck
+        run: pnpm typecheck      # tsc --noEmit
+      - name: Lint
+        run: pnpm lint
+      - name: Unit tests
+        run: pnpm test:unit --coverage
+
+  # ---------------------------------------------------------------------------
+  # Go:vet + lint + 单测(-race)。代码在根,不带 working-directory。
+  # ---------------------------------------------------------------------------
+  go-quality:
+    needs: changes
+    if: needs.changes.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+          cache: true
+      - run: go vet ./...
+      - uses: golangci/golangci-lint-action@v6
+        with:
+          version: latest
+      - name: Unit tests
+        run: go test -race -count=1 ./...
+
+  # ---------------------------------------------------------------------------
+  # Python:类型检查(mypy)+ lint(ruff)+ 单测(pytest)
+  # ---------------------------------------------------------------------------
+  python-quality:
+    needs: changes
+    if: needs.changes.outputs.python == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r requirements-dev.txt
+      - name: Typecheck (mypy)
+        run: mypy .
+      - name: Lint (ruff)
+        run: ruff check .
+      - name: Unit tests
+        run: pytest -q --cov
+
+  # ---------------------------------------------------------------------------
+  # 集成测试:用 docker compose 起依赖(单体如无外部依赖可删除本 job)
+  # agent 必须能本地复现这一步(见 AGENTS.md),否则无法自我验证
+  # ---------------------------------------------------------------------------
+  integration:
+    needs: [changes, node-quality, go-quality, python-quality]
+    # always() 让本 job 在上游被 skip(无相关变更)时仍能运行
+    if: always() && needs.changes.outputs.non_docs == 'true' && !contains(needs.*.result, 'failure')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Boot stack
+        run: docker compose -f docker-compose.ci.yml up -d --wait
+      - name: Run integration tests
+        run: make test-integration     # 与 AGENTS.md 中"一条命令跑集成测试"一致
+      - name: Dump logs on failure
+        if: failure()
+        run: docker compose -f docker-compose.ci.yml logs
+
+  # ---------------------------------------------------------------------------
+  # Docker 构建:保证服务能成功打镜像(不推送)。单体通常 0 或 1 个 Dockerfile。
+  # ---------------------------------------------------------------------------
+  docker-build:
+    needs: changes
+    if: always() && needs.changes.outputs.non_docs == 'true' && !contains(needs.*.result, 'failure')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Build image (若无 Dockerfile 本步自动跳过)
+        run: |
+          if [ -f Dockerfile ]; then
+            docker build -t "ci/$(basename "$PWD"):${{ github.sha }}" .
+          else
+            echo "无根级 Dockerfile,跳过镜像构建。"
+          fi
+
+  # ---------------------------------------------------------------------------
+  # 端到端测试(Playwright)—— 单体如无前端可删除本 job
+  # ---------------------------------------------------------------------------
+  e2e:
+    needs: [changes, integration, docker-build]
+    if: always() && needs.changes.outputs.non_docs == 'true' && !contains(needs.*.result, 'failure')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - name: Boot stack
+        run: docker compose -f docker-compose.ci.yml up -d --wait
+      - name: E2E
+        run: pnpm exec playwright test
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+
+  # ---------------------------------------------------------------------------
+  # 环境一致性检查:dev/prod 配置不漂移、必需的 secrets/env key 齐全
+  # ---------------------------------------------------------------------------
+  env-parity:
+    needs: changes
+    if: needs.changes.outputs.non_docs == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check env parity
+        # 校验 .env.dev.example / .env.prod.example 的 key 集合一致(值可不同)
+        run: python scripts/check_env_parity.py config/.env.dev.example config/.env.prod.example
+
+  # ---------------------------------------------------------------------------
+  # 汇总门禁:把它设为唯一的 required status check / merge queue 必需项。
+  # 任意上游失败 → 红。这样不必在分支保护里逐个勾选 job。
+  # ---------------------------------------------------------------------------
+  ci-gate:
+    needs: [changes, node-quality, go-quality, python-quality, integration, docker-build, e2e, env-parity]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify all required jobs passed
+        run: |
+          results='${{ join(needs.*.result, ' ') }}'
+          echo "Upstream results: $results"
+          if [ "${{ needs.changes.outputs.non_docs }}" != "true" ]; then
+            echo "docs-only change detected; skipping CI validation by policy."
+            echo "✅ CI gate green."
+            exit 0
+          fi
+          for r in $results; do
+            if [ "$r" = "failure" ] || [ "$r" = "cancelled" ]; then
+              echo "::error::CI gate failed — a required job did not pass."
+              exit 1
+            fi
+          done
+          echo "✅ CI gate green."

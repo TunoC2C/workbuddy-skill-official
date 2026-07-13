@@ -1,0 +1,4 @@
+state/tasks/*.tmp.*
+state/_local/
+__pycache__/
+.worktrees/
